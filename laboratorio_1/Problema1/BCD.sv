@@ -36,7 +36,7 @@ module BCD (input logic [3:0] x,
 						       x[3] & x[2] & x[1] & ~x[0] |
 						       x[3] & ~x[2] & x[1] & x[0];
 								 
-	assign tens_seg[1] = x[3] & (x[2] | x[1]);
+	assign tens_seg[1] = ~(x[3] & (x[2] | x[1]));
 	assign tens_seg[0] = tens_seg[1];
 	
 endmodule
