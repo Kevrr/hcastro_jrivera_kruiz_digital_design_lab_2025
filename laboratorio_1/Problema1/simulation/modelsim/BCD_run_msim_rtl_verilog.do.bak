@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+E:/Documents/TDD/Labs/laboratorio_1/Problema1 {E:/Documents/TDD/Labs/laboratorio_1/Problema1/BCD.sv}
+
