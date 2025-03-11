@@ -1,0 +1,27 @@
+|suma
+a => y.IN0
+a => y.IN0
+a => z.IN0
+b => y.IN1
+b => z.IN1
+c => ~NO_FANOUT~
+d => ~NO_FANOUT~
+e => y.IN1
+e => y.IN1
+e => z.IN1
+f => ~NO_FANOUT~
+g => ~NO_FANOUT~
+h => ~NO_FANOUT~
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+units_seg[0] <= <GND>
+units_seg[1] <= <GND>
+units_seg[2] <= <GND>
+units_seg[3] <= <GND>
+units_seg[4] <= <GND>
+units_seg[5] <= <GND>
+units_seg[6] <= <GND>
+tens_seg[0] <= <GND>
+tens_seg[1] <= <GND>
+
+

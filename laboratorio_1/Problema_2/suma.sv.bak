@@ -1,0 +1,5 @@
+module Suma(module BCD (input logic [3:0] x,input logic [3:0] y,
+				output logic [6:0] units_seg,
+				output logic [1:0] tens_seg);
+				
+assign z = (x(0)*y(0))&((X(0)&y(0))*y(1))
