@@ -4,23 +4,107 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "y",
+					"name" : "units_seg[0]",
 					"strict" : false
 				},
 				{
-					"name" : "z",
+					"name" : "units_seg[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b",
+					"name" : "units_seg[2]",
 					"strict" : false
 				},
 				{
-					"name" : "e",
+					"name" : "units_seg[3]",
 					"strict" : false
 				},
 				{
-					"name" : "a",
+					"name" : "units_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "units_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "units_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tens_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tens_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tens_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tens_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tens_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tens_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
 					"strict" : false
 				}
 			]

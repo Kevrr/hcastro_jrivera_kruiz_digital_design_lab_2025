@@ -1,0 +1,18 @@
+module binario_a_BCD(
+    input logic [4:0] S,    // Entrada de 5 bits
+    output logic [3:0] U,   // Unidades en BCD
+    output logic [3:0] D    // Decenas en BCD
+);
+    // Decenas (D)
+    assign D[0] = (S[3] & (S[2] | S[1])) | S[4];
+    assign D[1] = (S[4] & ~S[3]) | (S[3] & S[2]);
+    assign D[2] = (S[4] & S[3]);
+    assign D[3] = 0;  // Solo puede ser 0 o 1
+
+    // Unidades (U)
+    assign U[3] = 0;
+    assign U[2] = (S[3] & S[1]) | (S[3] & S[2]) | (S[4] & ~S[3]);
+    assign U[1] = (~S[3] & S[1]) | (S[3] & ~S[2] & ~S[1]) | (S[4] & ~S[3]);
+    assign U[0] = S[0];
+
+endmodule

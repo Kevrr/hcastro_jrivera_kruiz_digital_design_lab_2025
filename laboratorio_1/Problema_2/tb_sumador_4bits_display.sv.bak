@@ -1,0 +1,27 @@
+module tb_sumador_4bits_display;
+
+    // Señales de prueba
+    logic [3:0] A, B;
+    logic [6:0] seg_units, seg_tens;
+
+    // Instanciar el módulo toplevel
+    top_level uut (
+        .A(A),
+        .B(B),
+        .seg_units(seg_units),
+        .seg_tens(seg_tens)
+    );
+
+    initial begin
+        // Prueba 1: A = 1111 (15), B = 1010 (10)
+        A = 4'b1111; B = 4'b1010;
+        #10; // Espera 10 unidades de tiempo
+        
+        // Prueba 2: A = 0101 (5), B = 0110 (6)
+        A = 4'b0101; B = 4'b0110;
+        #10; // Espera 10 unidades de tiempo
+        
+        // Agregar más pruebas según sea necesario
+    end
+
+endmodule
