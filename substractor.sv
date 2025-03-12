@@ -1,26 +1,27 @@
-module substractor(
-    input logic [3:0] A, B,  // Entradas de 4 bits
-    output logic [4:0] D     // Salida de 5 bits (para manejar el bit de préstamo)
+module substractor #(
+    parameter int N = 7 // Parámetro para definir el número de bits
+)(
+    input logic clk,                
+    input logic reset,              
+    input logic button,             
+    output logic [N-1:0] value      
 );
-    logic B0, B1, B2, B3;  
+    logic [N-1:0] count;      
+    logic button_prev;        
 
-    // Primer bit
-    assign D[0] = A[0] ^ B[0]; 
-    assign B0   = ~A[0] & B[0];
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset) begin
+            count <= (2**N - 1); // Inicializar en el valor máximo posible
+            button_prev <= 1'b0;
+        end else begin
+            if (button && !button_prev) begin
+                if (count > 0) begin
+                    count <= count - 1;
+                end
+            end
+            button_prev <= button;
+        end
+    end
 
-    // Segundo bit
-    assign D[1] = (A[1] ^ B[1]) ^ B0;
-    assign B1   = (~A[1] & B[1]) | (B0 & (~A[1] ^ B[1]));
-
-    // Tercer bit
-    assign D[2] = (A[2] ^ B[2]) ^ B1;
-    assign B2   = (~A[2] & B[2]) | (B1 & (~A[2] ^ B[2]));
-
-    // Cuarto bit
-    assign D[3] = (A[3] ^ B[3]) ^ B2;
-    assign B3   = (~A[3] & B[3]) | (B2 & (~A[3] ^ B[3]));
-
-    // Quinto bit (Borrow)
-    assign D[4] = B3;  // Este es el bit extra para manejar el bit de préstamo
-
+    assign value = count;
 endmodule
