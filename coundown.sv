@@ -1,56 +1,26 @@
-module coundown(
-    input logic clk,                  // Reloj del sistema
-    input logic reset,                // Switch para reiniciar el valor a 63
-    input logic button,               // Botón para disminuir el valor
-    output logic [6:0] value          // Salida de 7 bits para representar valores de 0 a 63
-);
-    logic [6:0] count;                // Registro para mantener el valor actual
-    logic button_prev;                // Registro para detectar flanco ascendente del botón
+module countdown_tb;
+    logic clk, reset, button;
+    logic [1:0] value_2;
+    logic [3:0] value_4;
+    logic [5:0] value_6;
 
-    // Lógica de control del contador
-    always_ff @(posedge clk or posedge reset) begin
-        if (reset) begin
-            count <= 7'd63; // Reiniciar el valor a 63
-            button_prev <= 1'b0; // Resetear también el estado del botón
-        end else begin
-            if (button && !button_prev) begin
-                if (count > 0) begin
-                    count <= count - 1; // Decrementar el contador
-                end
-            end
-            button_prev <= button; // Actualizar el estado previo del botón
-        end
+    // Instanciar countdown con diferentes valores de N
+    countdown #(2) uut_2bit (.clk(clk), .reset(reset), .button(button), .value(value_2));
+    countdown #(4) uut_4bit (.clk(clk), .reset(reset), .button(button), .value(value_4));
+    countdown #(6) uut_6bit (.clk(clk), .reset(reset), .button(button), .value(value_6));
+
+    // Generar reloj
+    always #5 clk = ~clk;
+
+    initial begin
+        clk = 0; reset = 1; button = 0;
+        #10 reset = 0;
+
+        // Simular 3 pulsos de botón
+        #20 button = 1; #10 button = 0;
+        #20 button = 1; #10 button = 0;
+        #20 button = 1; #10 button = 0;
+
+        #100 $stop; // Detener la simulación
     end
-
-    // Asignar el valor de salida
-    assign value = count;
-
-endmodule
-
-// Módulo subtractor del código base
-module subtractor(
-    input logic [3:0] A, B,  // Entradas de 4 bits
-    output logic [4:0] D     // Salida de 5 bits (para manejar el bit de préstamo)
-);
-    logic B0, B1, B2, B3;  
-
-    // Primer bit
-    assign D[0] = A[0] ^ B[0]; 
-    assign B0   = ~A[0] & B[0];
-
-    // Segundo bit
-    assign D[1] = (A[1] ^ B[1]) ^ B0;
-    assign B1   = (~A[1] & B[1]) | (B0 & (~A[1] ^ B[1]));
-
-    // Tercer bit
-    assign D[2] = (A[2] ^ B[2]) ^ B1;
-    assign B2   = (~A[2] & B[2]) | (B1 & (~A[2] ^ B[2]));
-
-    // Cuarto bit
-    assign D[3] = (A[3] ^ B[3]) ^ B2;
-    assign B3   = (~A[3] & B[3]) | (B2 & (~A[3] ^ B[3]));
-
-    // Quinto bit (Borrow)
-    assign D[4] = B3;  // Este es el bit extra para manejar el bit de préstamo
-
 endmodule
