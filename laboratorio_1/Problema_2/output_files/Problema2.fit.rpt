@@ -1,5 +1,5 @@
 Fitter report for Problema2
-Tue Mar 11 17:02:16 2025
+Tue Mar 11 18:03:16 2025
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Tue Mar 11 17:02:16 2025          ;
+; Fitter Status                   ; Successful - Tue Mar 11 18:03:16 2025          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; Problema2                                      ;
 ; Top-level Entity Name           ; sumador_4bits_display                          ;
@@ -1450,64 +1450,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                            ;
-+---------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                         ; Pad To Core Index ; Setting ;
-+---------------------------------------------+-------------------+---------+
-; A[0]                                        ;                   ;         ;
-;      - suma:sumador_inst|S[0]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[1]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[2]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|C2                 ; 1                 ; 0       ;
-;      - suma:sumador_inst|C1                 ; 1                 ; 0       ;
-; B[0]                                        ;                   ;         ;
-;      - suma:sumador_inst|S[0]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[1]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[2]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|C2                 ; 1                 ; 0       ;
-;      - suma:sumador_inst|C1                 ; 1                 ; 0       ;
-; A[1]                                        ;                   ;         ;
-;      - suma:sumador_inst|S[1]               ; 0                 ; 0       ;
-;      - suma:sumador_inst|S[2]               ; 0                 ; 0       ;
-;      - suma:sumador_inst|C2                 ; 0                 ; 0       ;
-;      - suma:sumador_inst|C1                 ; 0                 ; 0       ;
-; B[1]                                        ;                   ;         ;
-;      - suma:sumador_inst|S[1]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[2]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|C2                 ; 1                 ; 0       ;
-;      - suma:sumador_inst|C1                 ; 1                 ; 0       ;
-; A[2]                                        ;                   ;         ;
-;      - suma:sumador_inst|S[2]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|C2                 ; 1                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|U[3]~2        ; 1                 ; 0       ;
-; B[2]                                        ;                   ;         ;
-;      - suma:sumador_inst|S[2]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|C2                 ; 1                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|U[3]~2        ; 1                 ; 0       ;
-; A[3]                                        ;                   ;         ;
-;      - binario_a_BCD:bcd_inst|U[1]~0        ; 1                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|U[2]~1        ; 1                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|U[3]~2        ; 1                 ; 0       ;
-;      - display_7seg:display_tens|Decoder0~0 ; 1                 ; 0       ;
-;      - display_7seg:display_tens|Decoder0~1 ; 1                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|D[0]~0        ; 1                 ; 0       ;
-;      - display_7seg:display_tens|Decoder0~2 ; 1                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|LessThan1~0   ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[3]               ; 1                 ; 0       ;
-;      - suma:sumador_inst|S[4]               ; 1                 ; 0       ;
-; B[3]                                        ;                   ;         ;
-;      - binario_a_BCD:bcd_inst|U[1]~0        ; 0                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|U[2]~1        ; 0                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|U[3]~2        ; 0                 ; 0       ;
-;      - display_7seg:display_tens|Decoder0~0 ; 0                 ; 0       ;
-;      - display_7seg:display_tens|Decoder0~1 ; 0                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|D[0]~0        ; 0                 ; 0       ;
-;      - display_7seg:display_tens|Decoder0~2 ; 0                 ; 0       ;
-;      - binario_a_BCD:bcd_inst|LessThan1~0   ; 0                 ; 0       ;
-;      - suma:sumador_inst|S[3]               ; 0                 ; 0       ;
-;      - suma:sumador_inst|S[4]               ; 0                 ; 0       ;
-+---------------------------------------------+-------------------+---------+
++-------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                          ;
++-------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                       ; Pad To Core Index ; Setting ;
++-------------------------------------------+-------------------+---------+
+; A[0]                                      ;                   ;         ;
+;      - suma:sumador_inst|S[0]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[1]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[2]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|C2               ; 1                 ; 0       ;
+;      - suma:sumador_inst|C1               ; 1                 ; 0       ;
+; B[0]                                      ;                   ;         ;
+;      - suma:sumador_inst|S[0]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[1]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[2]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|C2               ; 1                 ; 0       ;
+;      - suma:sumador_inst|C1               ; 1                 ; 0       ;
+; A[1]                                      ;                   ;         ;
+;      - suma:sumador_inst|S[1]             ; 0                 ; 0       ;
+;      - suma:sumador_inst|S[2]             ; 0                 ; 0       ;
+;      - suma:sumador_inst|C2               ; 0                 ; 0       ;
+;      - suma:sumador_inst|C1               ; 0                 ; 0       ;
+; B[1]                                      ;                   ;         ;
+;      - suma:sumador_inst|S[1]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[2]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|C2               ; 1                 ; 0       ;
+;      - suma:sumador_inst|C1               ; 1                 ; 0       ;
+; A[2]                                      ;                   ;         ;
+;      - suma:sumador_inst|S[2]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|C2               ; 1                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|U[3]~2      ; 1                 ; 0       ;
+; B[2]                                      ;                   ;         ;
+;      - suma:sumador_inst|S[2]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|C2               ; 1                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|U[3]~2      ; 1                 ; 0       ;
+; A[3]                                      ;                   ;         ;
+;      - binario_a_BCD:bcd_inst|U[1]~0      ; 1                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|U[2]~1      ; 1                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|U[3]~2      ; 1                 ; 0       ;
+;      - display_7seg:display_tens|Mux1~0   ; 1                 ; 0       ;
+;      - display_7seg:display_tens|Mux1~1   ; 1                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|D[0]~0      ; 1                 ; 0       ;
+;      - display_7seg:display_tens|Mux1~2   ; 1                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|LessThan1~0 ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[3]             ; 1                 ; 0       ;
+;      - suma:sumador_inst|S[4]             ; 1                 ; 0       ;
+; B[3]                                      ;                   ;         ;
+;      - binario_a_BCD:bcd_inst|U[1]~0      ; 0                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|U[2]~1      ; 0                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|U[3]~2      ; 0                 ; 0       ;
+;      - display_7seg:display_tens|Mux1~0   ; 0                 ; 0       ;
+;      - display_7seg:display_tens|Mux1~1   ; 0                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|D[0]~0      ; 0                 ; 0       ;
+;      - display_7seg:display_tens|Mux1~2   ; 0                 ; 0       ;
+;      - binario_a_BCD:bcd_inst|LessThan1~0 ; 0                 ; 0       ;
+;      - suma:sumador_inst|S[3]             ; 0                 ; 0       ;
+;      - suma:sumador_inst|S[4]             ; 0                 ; 0       ;
++-------------------------------------------+-------------------+---------+
 
 
 +----------------------------------------------------------------------+
@@ -1737,7 +1737,7 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Problema2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1758,18 +1758,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/output_files/Problema2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 7950 megabytes
-    Info: Processing ended: Tue Mar 11 17:02:16 2025
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:01:53
+    Info: Processing ended: Tue Mar 11 18:03:16 2025
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:01:52
 
 
 +----------------------------+

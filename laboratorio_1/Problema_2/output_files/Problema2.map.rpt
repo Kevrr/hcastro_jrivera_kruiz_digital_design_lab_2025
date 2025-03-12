@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Problema2
-Tue Mar 11 17:01:48 2025
+Tue Mar 11 18:02:51 2025
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 11 17:01:48 2025          ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 11 18:02:51 2025          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; Problema2                                      ;
 ; Top-level Entity Name           ; sumador_4bits_display                          ;
@@ -167,16 +167,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-; suma.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/suma.sv                  ;         ;
-; binario_a_BCD.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.sv         ;         ;
-; sumador_4bits_display.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.sv ;         ;
-; display_7seg.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/display_7seg.sv          ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                        ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; suma.vhd                         ; yes             ; User VHDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/suma.vhd                  ;         ;
+; binario_a_BCD.vhd                ; yes             ; User VHDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.vhd         ;         ;
+; display_7seg.vhd                 ; yes             ; User VHDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/display_7seg.vhd          ;         ;
+; sumador_4bits_display.vhd        ; yes             ; User VHDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -240,7 +240,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sumador_4bits_display|binario_a_BCD:bcd_inst|U[2] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sumador_4bits_display|binario_a_BCD:bcd_inst|U[3] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
@@ -249,10 +249,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 26                          ;
-;     normal            ; 26                          ;
+; arriav_lcell_comb     ; 25                          ;
+;     normal            ; 25                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
+;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 10                          ;
@@ -261,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 27                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.21                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,30 +280,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Mar 11 17:01:43 2025
+    Info: Processing started: Tue Mar 11 18:02:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema2 -c Problema2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file suma.sv
-    Info (12023): Found entity 1: suma File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/suma.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file binario_a_bcd.sv
-    Info (12023): Found entity 1: binario_a_BCD File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file sumador_4bits_display.sv
-    Info (12023): Found entity 1: sumador_4bits_display File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file display_7seg.sv
-    Info (12023): Found entity 1: display_7seg File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/display_7seg.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_sumador_4bits_display.sv
-    Info (12023): Found entity 1: tb_sumador_4bits_display File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/tb_sumador_4bits_display.sv Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file suma.vhd
+    Info (12022): Found design unit 1: suma-Behavioral File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/suma.vhd Line: 14
+    Info (12023): Found entity 1: suma File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/suma.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file binario_a_bcd.vhd
+    Info (12022): Found design unit 1: binario_a_BCD-Behavioral File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.vhd Line: 14
+    Info (12023): Found entity 1: binario_a_BCD File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file display_7seg.vhd
+    Info (12022): Found design unit 1: display_7seg-Behavioral File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/display_7seg.vhd Line: 13
+    Info (12023): Found entity 1: display_7seg File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/display_7seg.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file sumador_4bits_display.vhd
+    Info (12022): Found design unit 1: sumador_4bits_display-Behavioral File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd Line: 16
+    Info (12023): Found entity 1: sumador_4bits_display File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file sumador_4bits_display_tb.vhd
+    Info (12022): Found design unit 1: sumador_4bits_display_tb-Behavioral File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display_tb.vhd Line: 9
+    Info (12023): Found entity 1: sumador_4bits_display_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display_tb.vhd Line: 6
 Info (12127): Elaborating entity "sumador_4bits_display" for the top level hierarchy
-Info (12128): Elaborating entity "suma" for hierarchy "suma:sumador_inst" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.sv Line: 9
-Info (12128): Elaborating entity "binario_a_BCD" for hierarchy "binario_a_BCD:bcd_inst" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.sv Line: 12
-Warning (10230): Verilog HDL assignment warning at binario_a_BCD.sv(15): truncated value with size 32 to match size of target (4) File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at binario_a_BCD.sv(18): truncated value with size 32 to match size of target (4) File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at binario_a_BCD.sv(21): truncated value with size 32 to match size of target (4) File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at binario_a_BCD.sv(24): truncated value with size 5 to match size of target (4) File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/binario_a_BCD.sv Line: 24
-Info (12128): Elaborating entity "display_7seg" for hierarchy "display_7seg:display_units" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.sv Line: 15
+Info (12128): Elaborating entity "suma" for hierarchy "suma:sumador_inst" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd Line: 21
+Info (12128): Elaborating entity "binario_a_BCD" for hierarchy "binario_a_BCD:bcd_inst" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd Line: 29
+Info (12128): Elaborating entity "display_7seg" for hierarchy "display_7seg:display_units" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd Line: 37
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "tens_seg[1]" is stuck at GND File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.sv Line: 3
+    Warning (13410): Pin "tens_seg[1]" is stuck at GND File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_1/Problema_2/sumador_4bits_display.vhd Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -311,9 +312,9 @@ Info (21057): Implemented 49 device resources after synthesis - the final resour
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 19 output pins
     Info (21061): Implemented 22 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Tue Mar 11 17:01:48 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Tue Mar 11 18:02:51 2025
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:12
 
