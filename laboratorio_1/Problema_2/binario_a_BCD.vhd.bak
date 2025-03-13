@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity binario_a_BCD is
+    Port (
+        S : in  STD_LOGIC_VECTOR (4 downto 0);  -- Entrada de 5 bits
+        U : out STD_LOGIC_VECTOR (3 downto 0);  -- Unidades en BCD
+        D : out STD_LOGIC_VECTOR (3 downto 0)   -- Decenas en BCD
+    );
+end binario_a_BCD;
+
+architecture Behavioral of binario_a_BCD is
+begin
+    process(S)
+    begin
+        -- Inicializa las salidas
+        U <= "0000";
+        D <= "0000";
+
+        -- Conversión directa de binario a BCD
+        if (S >= "11110") then  -- S >= 30
+            D <= "0011";  -- D = 3
+            U <= std_logic_vector(unsigned(S) - 30);
+        elsif (S >= "10100") then  -- S >= 20
+            D <= "0010";  -- D = 2
+            U <= std_logic_vector(unsigned(S) - 20);
+        elsif (S >= "01010") then  -- S >= 10
+            D <= "0001";  -- D = 1
+            U <= std_logic_vector(unsigned(S) - 10);
+        else
+            D <= "0000";  -- D = 0
+            U <= S;
+        end if;
+    end process;
+end Behavioral;
