@@ -1,21 +1,41 @@
 module ALU_tb;
-	
-	logic [3: 0] a, b, op, result, flags;
-	
-	ALU test(a, b, op, result, flags);
-	
+	logic [9:0] a, b, result;
+	logic [3:0] flags;
+	logic [9:0] a_10, b_10, result_10;
+    logic [31:0] a_32, b_32, result_32;
+    logic [3:0] op;
+    logic [3:0] flags_10, flags_32;
+    
+    ALU #(10) test_10(.a(a_10), .b(b_10), .op(op), .result(result_10), .flags(flags_10));
+    ALU #(32) test_32(.a(a_32), .b(b_32), .op(op), .result(result_32), .flags(flags_32));
+    
 	initial begin
-		op = 4'b0000; //suma
-		a = 4'd1; b=4'd1;
-		#20
-		assert(result == 4'd2) else $error("failed %d + %d, expected = 2, got = %d", a, b, result);
-		assert(flags == 4'b0000) else $error("%d + %d flags mismatched, expected = 0000, got = %b", a, b, flags);
-		
-		a = 4'd7; b=4'd6;
-		#20
- 		assert(result == 4'd13) else $error("failed %d + %d, expected = 13, got = %d", a, b, result);
-		assert(flags == 4'b1001) else $error("%d + %d flags mismatched, expected = 1001, got = %b", a, b, flags);
-		
+		// Test 1: Suma 10 bits
+        op = 4'b0000; // Suma
+        a_10 = 10'd1; b_10 = 10'd1;
+        #20;
+        assert(result_10 == 10'd2) else $error("failed %d + %d, expected = 2, got = %d", a_10, b_10, result_10);
+        assert(flags_10 == 4'b0000) else $error("%d + %d flags mismatched, expected = 0000, got = %b", a_10, b_10, flags_10);
+        
+        // Test 2: Suma con números más grandes 10 bits
+        a_10 = 10'd324; b_10 = 10'd324;
+        #20;
+        assert(result_10 == 10'd648) else $error("failed %d + %d, expected = 648, got = %d", a_10, b_10, result_10);
+        assert(flags_10 == 4'b0001) else $error("%d + %d flags mismatched, expected = 0001, got = %b", a_10, b_10, flags_10);
+        
+        // Test 3: Suma 32 bits
+        op = 4'b0000; // Suma
+        a_32 = 32'd100000; b_32 = 32'd200000;
+        #20;
+        assert(result_32 == 32'd300000) else $error("failed %d + %d, expected = 300000, got = %d", a_32, b_32, result_32);
+        assert(flags_32 == 4'b0000) else $error("%d + %d flags mismatched, expected = 0000, got = %b", a_32, b_32, flags_32);
+        
+        // Test 4: Suma con números más grandes 32 bits
+        a_32 = 32'd123456789; b_32 = 32'd987654321;
+        #20;
+        assert(result_32 == 32'd1111111110) else $error("failed %d + %d, expected = 1111111110, got = %d", a_32, b_32, result_32);
+        assert(flags_32 == 4'b0001) else $error("%d + %d flags mismatched, expected = 0001, got = %b", a_32, b_32, flags_32);
+          
 		op = 4'b0001; //resta
 		a = 4'd4; b=4'd4;
 		#20
