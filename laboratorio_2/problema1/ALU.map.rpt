@@ -1,5 +1,5 @@
-Analysis & Synthesis report for ALU
-Wed Mar 26 00:21:51 2025
+Analysis & Elaboration report for ALU
+Thu Mar 27 19:10:00 2025
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -7,38 +7,39 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. User-Specified and Inferred Latches
- 10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
- 12. Parameter Settings for User Entity Instance: adder:add
- 13. Parameter Settings for User Entity Instance: subtractor:sub
- 14. Parameter Settings for User Entity Instance: multiplier:mult
- 15. Parameter Settings for User Entity Instance: divider:div
- 16. Parameter Settings for User Entity Instance: modulo:mod
- 17. Parameter Settings for User Entity Instance: andGate:AND
- 18. Parameter Settings for User Entity Instance: orGate:OR
- 19. Parameter Settings for User Entity Instance: xorGate:XOR
- 20. Parameter Settings for User Entity Instance: shiftRight:sr
- 21. Parameter Settings for User Entity Instance: shiftLeft:sl
- 22. Parameter Settings for User Entity Instance: getResult:getRes
- 23. Parameter Settings for Inferred Entity Instance: divider:div|lpm_divide:Div0
- 24. Parameter Settings for Inferred Entity Instance: modulo:mod|lpm_divide:Mod0
- 25. Port Connectivity Checks: "getResult:getRes"
- 26. Port Connectivity Checks: "shiftLeft:sl"
- 27. Port Connectivity Checks: "shiftRight:sr"
- 28. Port Connectivity Checks: "multiplier:mult"
- 29. Port Connectivity Checks: "adder:add"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+  5. Parameter Settings for User Entity Instance: adder:add
+  6. Parameter Settings for User Entity Instance: subtractor:sub
+  7. Parameter Settings for User Entity Instance: multiplier:mult
+  8. Parameter Settings for User Entity Instance: divider:div
+  9. Parameter Settings for User Entity Instance: modulo:mod
+ 10. Parameter Settings for User Entity Instance: andGate:AND
+ 11. Parameter Settings for User Entity Instance: orGate:OR
+ 12. Parameter Settings for User Entity Instance: xorGate:XOR
+ 13. Parameter Settings for User Entity Instance: shiftRight:sr
+ 14. Parameter Settings for User Entity Instance: shiftLeft:sl
+ 15. Parameter Settings for User Entity Instance: getResult:getRes
+ 16. Analysis & Elaboration Settings
+ 17. Port Connectivity Checks: "getResult:getRes"
+ 18. Port Connectivity Checks: "shiftLeft:sl"
+ 19. Port Connectivity Checks: "shiftRight:sr"
+ 20. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[3].add_bits[2].fa"
+ 21. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[3].add_bits[1].fa"
+ 22. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[3].add_bits[0].fa"
+ 23. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[2].add_bits[6].fa"
+ 24. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[2].add_bits[1].fa"
+ 25. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[2].add_bits[0].fa"
+ 26. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[6].fa"
+ 27. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[5].fa"
+ 28. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[4].fa"
+ 29. Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa"
+ 30. Port Connectivity Checks: "multiplier:mult"
+ 31. Port Connectivity Checks: "subtractor:sub|full_subtractor:full_subtractors[0].fs"
+ 32. Port Connectivity Checks: "adder:add"
+ 33. Analysis & Elaboration Messages
+ 34. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -62,114 +63,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 26 00:21:51 2025          ;
-; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
-; Revision Name                   ; ALU                                            ;
-; Top-level Entity Name           ; ALU                                            ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
-; Total pins                      ; 21                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 1                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; ALU                ; ALU                ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Thu Mar 27 19:10:00 2025          ;
+; Quartus Prime Version         ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                 ; ALU                                            ;
+; Top-level Entity Name         ; ALU                                            ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -181,133 +90,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; xorGate.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv                 ;         ;
-; subtractor.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv              ;         ;
-; shiftRight.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv              ;         ;
-; shiftLeft.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv               ;         ;
-; orGate.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv                  ;         ;
-; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv              ;         ;
-; modulo.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv                  ;         ;
-; divider.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv                 ;         ;
-; andGate.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv                 ;         ;
-; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv                   ;         ;
-; getResult.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv               ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv                     ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                                            ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                                           ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                                       ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                                            ;         ;
-; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/lpm_divide_1am.tdf      ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/sign_div_unsign_7kh.tdf ;         ;
-; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/alt_u_div_kse.tdf       ;         ;
-; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/lpm_divide_42m.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 50         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 89         ;
-;     -- 7 input functions                    ; 2          ;
-;     -- 6 input functions                    ; 9          ;
-;     -- 5 input functions                    ; 25         ;
-;     -- 4 input functions                    ; 17         ;
-;     -- <=3 input functions                  ; 36         ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 21         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 1          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; b[3]~input ;
-; Maximum fan-out                             ; 29         ;
-; Total fan-out                               ; 384        ;
-; Average fan-out                             ; 2.91       ;
-+---------------------------------------------+------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                              ; Entity Name         ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |ALU                                      ; 89 (0)              ; 0 (0)                     ; 0                 ; 1          ; 21   ; 0            ; |ALU                                                                                                             ; ALU                 ; work         ;
-;    |adder:add|                            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|adder:add                                                                                                   ; adder               ; work         ;
-;    |andGate:AND|                          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|andGate:AND                                                                                                 ; andGate             ; work         ;
-;    |divider:div|                          ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|divider:div                                                                                                 ; divider             ; work         ;
-;       |lpm_divide:Div0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|divider:div|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_1am:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|divider:div|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
-;             |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|divider:div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|divider:div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-;    |getResult:getRes|                     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|getResult:getRes                                                                                            ; getResult           ; work         ;
-;    |modulo:mod|                           ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|modulo:mod                                                                                                  ; modulo              ; work         ;
-;       |lpm_divide:Mod0|                   ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|modulo:mod|lpm_divide:Mod0                                                                                  ; lpm_divide          ; work         ;
-;          |lpm_divide_42m:auto_generated|  ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|modulo:mod|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                    ; lpm_divide_42m      ; work         ;
-;             |sign_div_unsign_7kh:divider| ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|modulo:mod|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                        ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|    ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|modulo:mod|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider  ; alt_u_div_kse       ; work         ;
-;    |multiplier:mult|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |ALU|multiplier:mult                                                                                             ; multiplier          ; work         ;
-;    |shiftLeft:sl|                         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|shiftLeft:sl                                                                                                ; shiftLeft           ; work         ;
-;    |shiftRight:sr|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|shiftRight:sr                                                                                               ; shiftRight          ; work         ;
-;    |subtractor:sub|                       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|subtractor:sub                                                                                              ; subtractor          ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Independent 9x9                 ; 1           ;
-; Total number of DSP blocks      ; 1           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 1           ;
-+---------------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                 ;
-+----------------------------------------------------+-----------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal   ; Free of Timing Hazards ;
-+----------------------------------------------------+-----------------------+------------------------+
-; getResult:getRes|flags[0]                          ; getResult:getRes|Mux7 ; yes                    ;
-; getResult:getRes|flags[1]                          ; getResult:getRes|Mux7 ; yes                    ;
-; Number of user-specified and inferred latches = 2  ;                       ;                        ;
-+----------------------------------------------------+-----------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
 
 
 +---------------------------------------------------------------------+
@@ -430,60 +217,102 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: divider:div|lpm_divide:Div0 ;
-+------------------------+----------------+------------------------------------+
-; Parameter Name         ; Value          ; Type                               ;
-+------------------------+----------------+------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                            ;
-; LPM_WIDTHD             ; 4              ; Untyped                            ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
-; LPM_PIPELINE           ; 0              ; Untyped                            ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                            ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                            ;
-; CBXI_PARAMETER         ; lpm_divide_1am ; Untyped                            ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                            ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                            ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                       ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                     ;
-+------------------------+----------------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; ALU                ; ALU                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: modulo:mod|lpm_divide:Mod0 ;
-+------------------------+----------------+-----------------------------------+
-; Parameter Name         ; Value          ; Type                              ;
-+------------------------+----------------+-----------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                           ;
-; LPM_WIDTHD             ; 4              ; Untyped                           ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
-; LPM_PIPELINE           ; 0              ; Untyped                           ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                           ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                           ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                           ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                           ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                           ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
-+------------------------+----------------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "getResult:getRes"                                                                                                                                                                  ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sRRes   ; Input ; Warning  ; Input port expression (8 bits) is wider than the input port (4 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; multRes ; Input ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "multRes[7..4]" will be connected to GND.                                  ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "getResult:getRes"                                                                                                                                                                   ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                          ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sRRes   ; Input  ; Warning  ; Input port expression (8 bits) is wider than the input port (4 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; multRes ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "multRes[7..4]" will be connected to GND.                                  ;
+; result  ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (4 bits) it drives; bit(s) "result[4..4]" have no fanouts                                                        ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
@@ -504,13 +333,119 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplier:mult"                                                                       ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; y[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[3].add_bits[2].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[3].add_bits[1].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[3].add_bits[0].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
+; cin  ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[2].add_bits[6].fa"                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[2].add_bits[1].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[2].add_bits[0].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
+; cin  ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[6].fa"                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[5].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
+; b    ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[4].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                        ;
+; cin  ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "multiplier:mult"                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; product[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subtractor:sub|full_subtractor:full_subtractors[0].fs" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; bin  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -522,68 +457,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 90                          ;
-;     arith             ; 12                          ;
-;         0 data inputs ; 4                           ;
-;         2 data inputs ; 2                           ;
-;         5 data inputs ; 6                           ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 54                          ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 11                          ;
-;         5 data inputs ; 19                          ;
-;         6 data inputs ; 9                           ;
-;     shared            ; 22                          ;
-;         0 data inputs ; 6                           ;
-;         2 data inputs ; 10                          ;
-;         4 data inputs ; 6                           ;
-; arriav_mac            ; 1                           ;
-; boundary_port         ; 21                          ;
-;                       ;                             ;
-; Max LUT depth         ; 11.50                       ;
-; Average LUT depth     ; 8.13                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Wed Mar 26 00:21:45 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+    Info: Processing started: Thu Mar 27 19:09:55 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file xorgate.sv
     Info (12023): Found entity 1: xorGate File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file subtractor.sv
-    Info (12023): Found entity 1: subtractor File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file subtractor.sv
+    Info (12023): Found entity 1: full_subtractor File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv Line: 2
+    Info (12023): Found entity 2: subtractor File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file shiftright.sv
     Info (12023): Found entity 1: shiftRight File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft.sv
     Info (12023): Found entity 1: shiftLeft File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file orgate.sv
     Info (12023): Found entity 1: orGate File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file multiplier.sv
-    Info (12023): Found entity 1: multiplier File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file multiplier.sv
+    Info (12023): Found entity 1: full_adder File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv Line: 1
+    Info (12023): Found entity 2: multiplier File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file modulo.sv
     Info (12023): Found entity 1: modulo File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file divider.sv
@@ -598,6 +495,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file getresu
     Info (12023): Found entity 1: getResult File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file getoperation.sv
     Info (12023): Found entity 1: getOperation File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getOperation.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(68): truncated literal to match 2 bits File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 68
+Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(72): truncated literal to match 4 bits File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 72
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
     Info (12023): Found entity 1: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
@@ -605,7 +504,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Info (12128): Elaborating entity "adder" for hierarchy "adder:add" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
 Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:sub" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 13
+Info (12128): Elaborating entity "full_subtractor" for hierarchy "subtractor:sub|full_subtractor:full_subtractors[0].fs" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv Line: 31
 Info (12128): Elaborating entity "multiplier" for hierarchy "multiplier:mult" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 14
+Info (12128): Elaborating entity "full_adder" for hierarchy "multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv Line: 49
 Info (12128): Elaborating entity "divider" for hierarchy "divider:div" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 15
 Info (12128): Elaborating entity "modulo" for hierarchy "modulo:mod" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 16
 Info (12128): Elaborating entity "andGate" for hierarchy "andGate:AND" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 17
@@ -617,53 +518,18 @@ Info (12128): Elaborating entity "getResult" for hierarchy "getResult:getRes" Fi
 Warning (10240): Verilog HDL Always Construct warning at getResult.sv(13): inferring latch(es) for variable "flags", which holds its previous value in one or more paths through the always construct File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv Line: 13
 Info (10041): Inferred latch for "flags[0]" at getResult.sv(13) File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv Line: 13
 Info (10041): Inferred latch for "flags[1]" at getResult.sv(13) File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv Line: 13
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divider:div|Div0" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv Line: 6
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "modulo:mod|Mod0" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv Line: 6
-Info (12130): Elaborated megafunction instantiation "divider:div|lpm_divide:Div0" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv Line: 6
-Info (12133): Instantiated megafunction "divider:div|lpm_divide:Div0" with the following parameter: File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv Line: 6
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1am.tdf
-    Info (12023): Found entity 1: lpm_divide_1am File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/lpm_divide_1am.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/sign_div_unsign_7kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/alt_u_div_kse.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "modulo:mod|lpm_divide:Mod0" File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv Line: 6
-Info (12133): Instantiated megafunction "modulo:mod|lpm_divide:Mod0" with the following parameter: File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv Line: 6
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
-    Info (12023): Found entity 1: lpm_divide_42m File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/db/lpm_divide_42m.tdf Line: 25
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch getResult:getRes|flags[0] has unsafe behavior File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal a[3] File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 2
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "result[4]" is stuck at GND File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 4
-Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 111 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 89 logic cells
-    Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4892 megabytes
-    Info: Processing ended: Wed Mar 26 00:21:51 2025
-    Info: Elapsed time: 00:00:06
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4792 megabytes
+    Info: Processing ended: Thu Mar 27 19:10:00 2025
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:13
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
 The suppressed messages can be found in C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.map.smsg.
 
 

@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1742970218
+Z2 !s110 1743124264
 !i10b 1
 !s100 nKjhX^1=T7AFLCiFk^nbK3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,79 +19,79 @@ I@b9`Ej`>nRYHOC:TKM[fo3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1742969489
+Z5 w1743122830
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv
 !i122 9
 L0 1 23
-Z5 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1742970218.000000
+Z7 !s108 1743124264.000000
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1
-Z9 tCvgOpt 0
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1
+Z10 tCvgOpt 0
 vALU
 R1
 R2
 !i10b 1
-!s100 YdiZNYkBe<WhCGW7_l1>l0
+!s100 YP5dD@3^j_fST:8[7:lfd2
 R3
-IMic=H@`5z6OYEU@JeA8QD1
+IZ>zzoCnA2E67a<Bi1;2>[1
 R4
 S1
 R0
-w1742969423
+w1743124014
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv
 !i122 11
 L0 1 28
-R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv|
 !i113 1
-R7
 R8
 R9
+R10
 n@a@l@u
 vALU_tb
 R1
 R2
 !i10b 1
-!s100 ?LLghT`aZL^kYbkTJDh4j2
+!s100 G:E7>Y4:NLL<E0O2z2mUg1
 R3
-Ijl@i>];n<BLTj0jh2aN=>2
+ISTnoKm=EdFoBX9`3BJ9:I2
 R4
 S1
 R0
-w1742970105
+w1743123531
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv
 !i122 12
-L0 1 138
-R5
+L0 1 118
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv|
 !i113 1
-R7
 R8
 R9
+R10
 n@a@l@u_tb
 vandGate
 R1
-Z10 !s110 1742970217
+Z11 !s110 1743124263
 !i10b 1
 !s100 :zz1gX18PfP8naQTF>>a^0
 R3
@@ -99,26 +99,26 @@ Ie^48Ec9mQRem`h2?UkT820
 R4
 S1
 R0
-Z11 w1742960454
+R5
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv
 !i122 8
 Z12 L0 1 9
-R5
+R6
 r1
 !s85 0
 31
-Z13 !s108 1742970217.000000
+Z13 !s108 1743124263.000000
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv|
 !i113 1
-R7
 R8
 R9
+R10
 nand@gate
 vdivider
 R1
-R10
+R11
 !i10b 1
 !s100 E_[_3LIzKTkEPg;ak@[zJ1
 R3
@@ -126,12 +126,12 @@ Ie[7^4PBWG7noXl5YKREQG3
 R4
 S1
 R0
-R11
+Z14 w1743122831
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv
 !i122 7
 R12
-R5
+R6
 r1
 !s85 0
 31
@@ -139,9 +139,61 @@ R13
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv|
 !i113 1
-R7
 R8
 R9
+R10
+vfull_adder
+R1
+R11
+!i10b 1
+!s100 ei[oEUQB[NH@GC5Uc@V=Q3
+R3
+Ih@Sdk50Nc4]VFEnd1c?>W3
+R4
+S1
+R0
+Z15 w1743122744
+Z16 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv
+Z17 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv
+!i122 5
+L0 1 7
+R6
+r1
+!s85 0
+31
+R13
+Z18 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv|
+!i113 1
+R8
+R9
+R10
+vfull_subtractor
+R1
+R11
+!i10b 1
+!s100 _;B;>jPWjfV4`Nd]=7;Dl0
+R3
+I^>LdEQz@M4cDOO:U1f?C@0
+R4
+S1
+R0
+R15
+Z20 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv
+Z21 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv
+!i122 1
+L0 2 8
+R6
+r1
+!s85 0
+31
+R13
+Z22 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv|
+!i113 1
+R8
+R9
+R10
 vgetResult
 R1
 R2
@@ -152,26 +204,26 @@ IhUl7fIR3Y8D3E[F0UP:8m1
 R4
 S1
 R0
-w1742968975
+R14
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv
 !i122 10
 L0 1 62
-R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv|
 !i113 1
-R7
 R8
 R9
+R10
 nget@result
 vmodulo
 R1
-R10
+R11
 !i10b 1
 !s100 mTG_ILkBjPhKNBS0zm:RM1
 R3
@@ -179,12 +231,12 @@ ImRX_3=10J7Em19kamhAR]0
 R4
 S1
 R0
-R11
+R14
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv
 !i122 6
 R12
-R5
+R6
 r1
 !s85 0
 31
@@ -192,38 +244,38 @@ R13
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vmultiplier
 R1
-R10
+R11
 !i10b 1
-!s100 0@SmXDi8c6;]jaRV0jcdC3
+!s100 2O_HTQX@GGKFECagB@Skk2
 R3
-IgonX6RB8GmP^;Pz3M4JMW2
+IFEf0`CkJ:4`2@Jl:zhAMj3
 R4
 S1
 R0
-R11
-8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv
-FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv
+R15
+R16
+R17
 !i122 5
-R12
-R5
+L0 9 50
+R6
 r1
 !s85 0
 31
 R13
-!s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv|
+R18
+R19
 !i113 1
-R7
 R8
 R9
+R10
 vorGate
 R1
-R10
+R11
 !i10b 1
 !s100 imQN829bQoSU`zQdecRU]3
 R3
@@ -231,12 +283,12 @@ IhW=8?E7ZAWhHgV>]0QdY]1
 R4
 S1
 R0
-R11
+R14
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv
 !i122 4
 R12
-R5
+R6
 r1
 !s85 0
 31
@@ -244,13 +296,13 @@ R13
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv|
 !i113 1
-R7
 R8
 R9
+R10
 nor@gate
 vshiftLeft
 R1
-R10
+R11
 !i10b 1
 !s100 b7ZC4=3i0@?VzJ:HoCWCl0
 R3
@@ -258,12 +310,12 @@ IRTQV^B2[3>5dBZ_eJDT^?3
 R4
 S1
 R0
-R11
+R14
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv
 !i122 3
-Z14 L0 1 12
-R5
+Z24 L0 1 12
+R6
 r1
 !s85 0
 31
@@ -271,13 +323,13 @@ R13
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv|
 !i113 1
-R7
 R8
 R9
+R10
 nshift@left
 vshiftRight
 R1
-R10
+R11
 !i10b 1
 !s100 _I^QA[3<K1O9jA7cg`Y;22
 R3
@@ -285,12 +337,12 @@ I]m@P4oP_^4?@6=@HS5Qz=1
 R4
 S1
 R0
-R11
+R14
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv
 !i122 2
-R14
-R5
+R24
+R6
 r1
 !s85 0
 31
@@ -298,39 +350,39 @@ R13
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv|
 !i113 1
-R7
 R8
 R9
+R10
 nshift@right
 vsubtractor
 R1
-R10
+R11
 !i10b 1
-!s100 JEChAAbG`Z;k3?:Z9^l1o2
+!s100 lb_KbKPgN?1`Ck4zEkDHG0
 R3
-ILe7XIe2;IWRCTzM@`mDlH3
+IHgehchVQG:mdYfzfmO9fb3
 R4
 S1
 R0
-R11
-8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv
-FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv
+R15
+R20
+R21
 !i122 1
-R12
-R5
+L0 12 26
+R6
 r1
 !s85 0
 31
 R13
-!s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv|
+R22
+R23
 !i113 1
-R7
 R8
 R9
+R10
 vxorGate
 R1
-R10
+R11
 !i10b 1
 !s100 oH?zm<92lQ`Yz]Zlm_>]h2
 R3
@@ -338,12 +390,12 @@ Ii>KK>QAShj6MJ_R[:cLl@3
 R4
 S1
 R0
-R11
+R14
 8C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv
 FC:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv
 !i122 0
 R12
-R5
+R6
 r1
 !s85 0
 31
@@ -351,7 +403,7 @@ R13
 !s107 C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1|C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv|
 !i113 1
-R7
 R8
 R9
+R10
 nxor@gate

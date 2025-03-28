@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:27 on Mar 26,2025
+# Start time: 19:10:52 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 00:23:28 on Mar 26,2025, Elapsed time: 0:00:01
+# End time: 19:10:52 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:28 on Mar 26,2025
+# Start time: 19:10:53 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 00:23:28 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:10:53 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:28 on Mar 26,2025
+# Start time: 19:10:53 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 00:23:29 on Mar 26,2025, Elapsed time: 0:00:01
+# End time: 19:10:53 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:29 on Mar 26,2025
+# Start time: 19:10:53 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 00:23:30 on Mar 26,2025, Elapsed time: 0:00:01
+# End time: 19:10:54 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:30 on Mar 26,2025
+# Start time: 19:10:55 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 00:23:30 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:10:55 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:30 on Mar 26,2025
+# Start time: 19:10:55 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +483,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 00:23:32 on Mar 26,2025, Elapsed time: 0:00:02
+# End time: 19:10:57 on Mar 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:32 on Mar 26,2025
+# Start time: 19:10:57 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 00:23:33 on Mar 26,2025, Elapsed time: 0:00:01
+# End time: 19:10:58 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:33 on Mar 26,2025
+# Start time: 19:10:58 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 00:23:33 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:10:58 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +646,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:33 on Mar 26,2025
+# Start time: 19:10:59 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 00:23:35 on Mar 26,2025, Elapsed time: 0:00:02
+# End time: 19:11:00 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:35 on Mar 26,2025
+# Start time: 19:11:00 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 00:23:35 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:00 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +765,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:35 on Mar 26,2025
+# Start time: 19:11:01 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:02
+# End time: 19:11:02 on Mar 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:02 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:02 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -800,139 +800,141 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/xorGate.sv 
 # -- Compiling module xorGate
 # 
 # Top level modules:
 # 	xorGate
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/subtractor.sv 
+# -- Compiling module full_subtractor
 # -- Compiling module subtractor
 # 
 # Top level modules:
 # 	subtractor
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftRight.sv 
 # -- Compiling module shiftRight
 # 
 # Top level modules:
 # 	shiftRight
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/shiftLeft.sv 
 # -- Compiling module shiftLeft
 # 
 # Top level modules:
 # 	shiftLeft
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/orGate.sv 
 # -- Compiling module orGate
 # 
 # Top level modules:
 # 	orGate
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/multiplier.sv 
+# -- Compiling module full_adder
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/modulo.sv 
 # -- Compiling module modulo
 # 
 # Top level modules:
 # 	modulo
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/divider.sv 
 # -- Compiling module divider
 # 
 # Top level modules:
 # 	divider
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:37 on Mar 26,2025
+# Start time: 19:11:03 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/andGate.sv 
 # -- Compiling module andGate
 # 
 # Top level modules:
 # 	andGate
-# End time: 00:23:37 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:03 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:38 on Mar 26,2025
+# Start time: 19:11:04 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 00:23:38 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:04 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:38 on Mar 26,2025
+# Start time: 19:11:04 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv 
 # -- Compiling module getResult
 # 
 # Top level modules:
 # 	getResult
-# End time: 00:23:38 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:04 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:38 on Mar 26,2025
+# Start time: 19:11:04 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:23:38 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:04 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1 {C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:23:38 on Mar 26,2025
+# Start time: 19:11:04 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1" C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv 
 # -- Compiling module ALU_tb
 # 
 # Top level modules:
 # 	ALU_tb
-# End time: 00:23:38 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 19:11:04 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
-# Start time: 00:23:38 on Mar 26,2025
+# Start time: 19:11:04 on Mar 27,2025
 # Loading sv_std.std
 # Loading work.ALU_tb
 # Loading work.ALU
@@ -947,22 +949,64 @@
 # Loading work.shiftRight
 # Loading work.shiftLeft
 # Loading work.getResult
-# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (10) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_10 File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 9
-# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (10) for port 'y'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_10/add File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
+# Loading work.full_subtractor
+# Loading work.full_adder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'y'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_2/add File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sr'.  Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_10/sr File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 20
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_2/sr File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 20
 # ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(20): [TFMPC] - Missing connection for port 'sign'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sl'.  Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_10/sl File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 21
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_2/sl File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 21
 # ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(21): [TFMPC] - Missing connection for port 'sign'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (20) for port 'sRRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_10/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
-# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (10) for port 'multRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_10/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
-# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (32) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_32 File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 10
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'sRRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_2/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'multRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_2/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_2/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'y'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_4/add File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sr'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_4/sr File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 20
+# ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(20): [TFMPC] - Missing connection for port 'sign'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sl'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_4/sl File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 21
+# ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(21): [TFMPC] - Missing connection for port 'sign'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'sRRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_4/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'multRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_4/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_4/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'y'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_8/add File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sr'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_8/sr File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 20
+# ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(20): [TFMPC] - Missing connection for port 'sign'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sl'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_8/sl File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 21
+# ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(21): [TFMPC] - Missing connection for port 'sign'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'sRRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_8/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'multRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_8/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_8/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'y'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_16/add File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sr'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_16/sr File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 20
+# ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(20): [TFMPC] - Missing connection for port 'sign'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sl'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_16/sl File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 21
+# ** Warning: (vsim-3722) C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv(21): [TFMPC] - Missing connection for port 'sign'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'sRRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_16/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (16) for port 'multRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_16/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_16/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
 # ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (32) for port 'y'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/adder.sv(3).
 #    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_32/add File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 12
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sr'.  Expected 4, found 3.
@@ -975,6 +1019,8 @@
 #    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_32/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
 # ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multRes'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(6).
 #    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_32/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (33) does not match connection size (32) for port 'result'. The port definition is at: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/getResult.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_32/getRes File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU.sv Line: 23
 # 
 # add wave *
 # view structure
@@ -982,81 +1028,18 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Error:  324 +  324 flags mismatched, expected = 0001, got = 1000
-#    Time: 40 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 24
-# ** Error:  123456789 +  987654321 flags mismatched, expected = 0001, got = 0000
-#    Time: 80 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 37
-# ** Error: failed    4 -    4, expected = 0, got =    x
-#    Time: 100 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 42
-# ** Error:    4 -    4 flags mismatched, expected = 0100, got = xxxx
-#    Time: 100 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 43
-# ** Error: failed    8 -    1, expected = 9, got =    x
-#    Time: 120 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 47
-# ** Error:    8 -    1 flags mismatched, expected = 0001, got = xxxx
-#    Time: 120 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 48
-# ** Error: failed    2 *    4, expected = 8, got =    x
-#    Time: 140 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 53
-# ** Error:    2 *    4 flags mismatched, expected = 1000, got = xxxx
-#    Time: 140 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 54
-# ** Error: failed    6 *    3, expected = 10, got =    x
-#    Time: 160 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 58
-# ** Error:    6 *    3 flags mismatched, expected = 1001, got = xxxx
-#    Time: 160 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 59
-# ** Error: failed    6 /    2, expected = 3, got =    x
-#    Time: 180 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 64
-# ** Error:    6 /    2 flags mismatched, expected = 0000, got = xxxx
-#    Time: 180 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 65
-# ** Error: failed    7 /    3, expected = 2, got =    x
-#    Time: 200 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 69
-# ** Error:    7 /    3 flags mismatched, expected = 0000, got = xxxx
-#    Time: 200 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 70
-# ** Error: failed    4 mod    3, expected = 3, got =    x
-#    Time: 220 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 75
-# ** Error:    4 mod    3 flags mismatched, expected = 0000, got = xxxx
-#    Time: 220 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 76
-# ** Error: failed    2 mod    2, expected = 0, got =    x
-#    Time: 240 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 80
-# ** Error:    2 mod    2 flags mismatched, expected = 0100, got = xxxx
-#    Time: 240 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 81
-# ** Error: failed 0000000111 & 0000000110, expected = 0110, got = xxxxxxxxxx
-#    Time: 260 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 86
-# ** Error: 0000000111 & 0000000110 flags mismatched, expected = 0000, got = xxxx
-#    Time: 260 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 87
-# ** Error: failed 0000001111 & 0000001111, expected = 10, got = xxxxxxxxxx
-#    Time: 260 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 90
-# ** Error: 0000001111 & 0000001111 flags mismatched, expected = 1000, got = xxxx
-#    Time: 260 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 91
-# ** Error: failed 0000001111 | 0000000000, expected = 1111, got = xxxxxxxxxx
-#    Time: 280 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 96
-# ** Error: 0000001111 | 0000000000 flags mismatched, expected = 1000, got = xxxx
-#    Time: 280 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 97
-# ** Error: failed 0000000101 | 0000000101, expected = 0101, got = xxxxxxxxxx
-#    Time: 300 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 101
-# ** Error: 0000000101 | 0000000101 flags mismatched, expected = 0000, got = xxxx
-#    Time: 300 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 102
-# ** Error: failed 0000001001 ^ 0000000110, expected = 1111, got = xxxxxxxxxx
-#    Time: 320 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 107
-# ** Error: 0000001001 ^ 0000000110 flags mismatched, expected = 1000, got = xxxx
-#    Time: 320 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 108
-# ** Error: failed 0000001010 ^ 0000001010, expected = 0000, got = xxxxxxxxxx
-#    Time: 340 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 112
-# ** Error: 0000001010 ^ 0000001010 flags mismatched, expected = 0100, got = xxxx
-#    Time: 340 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 113
-# ** Error: failed 0000001100 >>    2, expected = 0011, got = xxxxxxxxxx
-#    Time: 360 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 118
-# ** Error: 0000001100 >>    2 flags mismatched, expected = 0000, got = xxxx
-#    Time: 360 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 119
-# ** Error: failed 0000001010 >>    3, expected = 0001, got = xxxxxxxxxx
-#    Time: 380 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 123
-# ** Error: 0000001010 >>    3 flags mismatched, expected = 0000, got = xxxx
-#    Time: 380 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 124
-# ** Error: failed 0000001100 <<    2, expected = 0000, got = xxxxxxxxxx
-#    Time: 400 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 129
-# ** Error: 0000001100 <<    2 flags mismatched, expected = 0100, got = xxxx
-#    Time: 400 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 130
-# ** Error: failed 0000001010 <<    3, expected = 0000, got = xxxxxxxxxx
-#    Time: 420 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 134
-# ** Error: 0000001010 <<    3 flags mismatched, expected = 0100, got = xxxx
-#    Time: 420 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 135
-# End time: 00:44:49 on Mar 26,2025, Elapsed time: 0:21:11
-# Errors: 38, Warnings: 16
+# ** Error: failed   8 *   8, expected = 64, got =   0
+#    Time: 260 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 76
+# ** Error: failed    16 *    16, expected = 256, got =     0
+#    Time: 280 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 80
+# ** Error: failed         32 *         32, expected = 1024, got =          0
+#    Time: 300 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 84
+# ** Error: failed 1100 <<  2, expected = 0000, got = 1000
+#    Time: 440 ps  Scope: ALU_tb File: C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv Line: 113
+# Todos los casos pasaron correctamente.
+# ** Note: $finish    : C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv(116)
+#    Time: 440 ps  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Users/andre/OneDrive/Escritorio/hcastro_jrivera_kruiz_digital_design_lab_2025/laboratorio_2/problema1/ALU_tb.sv line 116
+# End time: 19:12:51 on Mar 27,2025, Elapsed time: 0:01:47
+# Errors: 4, Warnings: 40

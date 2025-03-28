@@ -1,7 +1,7 @@
 module ALU #(parameter n = 4)
 	(input logic [n - 1: 0] a, b,
 	 input logic [3: 0] op,
-	 output logic [n: 0] result,
+	 output logic [n-1: 0] result,
 	 output logic [3: 0] flags); // N Z C V
 	 
 	logic [n - 1: 0] addRes, subRes, divRes, modRes, 
