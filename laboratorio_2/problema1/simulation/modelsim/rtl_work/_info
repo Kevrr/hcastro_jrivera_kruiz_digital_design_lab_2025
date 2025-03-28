@@ -8,55 +8,55 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/simulation/modelsim
+Z0 dE:/Documents/TDD/Labs/laboratorio_2/problema1/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1743135577
+Z2 !s110 1743146227
 !i10b 1
 !s100 nKjhX^1=T7AFLCiFk^nbK3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I<mchkInDSB`mfg6:KGd>z0
+IA34oP;M<<1GLU?d8NHTA20
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1743130780
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/adder.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/adder.sv
+Z5 w1743141097
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv
 !i122 9
 L0 1 23
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1743135577.000000
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/adder.sv|
+Z7 !s108 1743146227.000000
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv|
 !i113 1
 Z8 o-sv -work work
-Z9 !s92 -sv -work work +incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1
+Z9 !s92 -sv -work work +incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1
 Z10 tCvgOpt 0
 vALU
 R1
-Z11 !s110 1743135578
+Z11 !s110 1743146228
 !i10b 1
 !s100 YP5dD@3^j_fST:8[7:lfd2
 R3
-Iz:^VaAZfZFESCEbAn`;=a3
+I04;g94<6HeF;c_EQ?[9^H0
 R4
 S1
 R0
-Z12 w1743133517
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv
+R5
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv
 !i122 11
 L0 1 28
 R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv|
+Z12 !s108 1743146228.000000
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv|
 !i113 1
 R8
 R9
@@ -66,24 +66,24 @@ vALU_tb
 R1
 R11
 !i10b 1
-!s100 CdJKzgPL_LI:6G`N_Qn]C0
+!s100 ^19:O?_A;:OD<[Ylf4G<C2
 R3
-I`E<bYo7J^S>SR>a]SFUme1
+I1LO@MW11B4X6GD9@hE@`?3
 R4
 S1
 R0
-w1743134890
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv
+w1743146138
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv
 !i122 12
 L0 1 118
 R6
 r1
 !s85 0
 31
-!s108 1743135578.000000
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv|
+R12
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv|
 !i113 1
 R8
 R9
@@ -95,13 +95,13 @@ R2
 !i10b 1
 !s100 :zz1gX18PfP8naQTF>>a^0
 R3
-IV;LQzfBUXdeh:no6@`L[`1
+If@]3d4ckAMEGMYi5>IMSi3
 R4
 S1
 R0
 R5
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/andGate.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/andGate.sv
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv
 !i122 8
 Z13 L0 1 9
 R6
@@ -109,8 +109,8 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/andGate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/andGate.sv|
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv|
 !i113 1
 R8
 R9
@@ -122,13 +122,13 @@ R2
 !i10b 1
 !s100 E_[_3LIzKTkEPg;ak@[zJ1
 R3
-IZ><J^CSIZ3MTRIJQ^49R`3
+IX<Fc1Zhe4;nl6@J3g>VY03
 R4
 S1
 R0
 R5
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/divider.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/divider.sv
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv
 !i122 7
 R13
 R6
@@ -136,60 +136,60 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/divider.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/divider.sv|
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv|
 !i113 1
 R8
 R9
 R10
 vfull_adder
 R1
-Z14 !s110 1743135576
+R2
 !i10b 1
 !s100 ei[oEUQB[NH@GC5Uc@V=Q3
 R3
-IHY7Q;R=nfO=N1QK1SW>fd2
+I3h:jB:[imSfKG51nQLl293
 R4
 S1
 R0
-Z15 w1743135417
-Z16 8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv
-Z17 FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv
+R5
+Z14 8E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv
+Z15 FE:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv
 !i122 5
 L0 1 7
 R6
 r1
 !s85 0
 31
-Z18 !s108 1743135576.000000
-Z19 !s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv|
-Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv|
+R7
+Z16 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv|
 !i113 1
 R8
 R9
 R10
 vfull_subtractor
 R1
-R14
+Z18 !s110 1743146226
 !i10b 1
 !s100 _;B;>jPWjfV4`Nd]=7;Dl0
 R3
-I?JG@3PXE^]nIz5eFeh1k53
+IEh^=g?[J=P7C8JzoJa?oh0
 R4
 S1
 R0
-Z21 w1743130783
-Z22 8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv
-Z23 FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv
+Z19 w1743141098
+Z20 8E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv
+Z21 FE:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv
 !i122 1
 L0 2 8
 R6
 r1
 !s85 0
 31
-Z24 !s108 1743135575.000000
-Z25 !s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv|
-Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv|
+Z22 !s108 1743146226.000000
+Z23 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
+Z24 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
 !i113 1
 R8
 R9
@@ -198,24 +198,24 @@ vgetResult
 R1
 R2
 !i10b 1
-!s100 @g34Z8JVKVdXVS<8ZA;Bb1
+!s100 7fI4InEo[`DG7z>WgGZ0T0
 R3
-IGX:9P`J>bzI;GhgQVe=Hn1
+I^^fP<z124YD?7<7Lai<[43
 R4
 S1
 R0
-R12
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv
+w1743145511
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv
 !i122 10
-L0 1 62
+L0 1 66
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv|
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv|
 !i113 1
 R8
 R9
@@ -227,13 +227,13 @@ R2
 !i10b 1
 !s100 mTG_ILkBjPhKNBS0zm:RM1
 R3
-IKe1oSl3Gf3doj[DHIoFOE2
+I=`A?A:an]R@A^:;:XibX63
 R4
 S1
 R0
 R5
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/modulo.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/modulo.sv
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv
 !i122 6
 R13
 R6
@@ -241,60 +241,60 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/modulo.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/modulo.sv|
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv|
 !i113 1
 R8
 R9
 R10
 vmultiplier
 R1
-R14
+R2
 !i10b 1
 !s100 o>AgebSXMYL=cTQS3A4703
 R3
-I02Jh2gTk=><];QWk`mfTN3
+Iaz=BKYBb1UTaIS55CDXYS0
 R4
 S1
 R0
+R5
+R14
 R15
-R16
-R17
 !i122 5
 L0 9 54
 R6
 r1
 !s85 0
 31
-R18
-R19
-R20
+R7
+R16
+R17
 !i113 1
 R8
 R9
 R10
 vorGate
 R1
-R14
+R2
 !i10b 1
 !s100 imQN829bQoSU`zQdecRU]3
 R3
-I^8Wo4SNND_10AYPaz2iK`0
+I:VTCKzAN4o`=_6LcCFD^f3
 R4
 S1
 R0
 R5
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/orGate.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/orGate.sv
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv
 !i122 4
 R13
 R6
 r1
 !s85 0
 31
-R18
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/orGate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/orGate.sv|
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv|
 !i113 1
 R8
 R9
@@ -302,26 +302,26 @@ R10
 nor@gate
 vshiftLeft
 R1
-R14
+R2
 !i10b 1
-!s100 T=^gTGmeSLiR;AEhd]PH32
+!s100 e4^TmOg:eM7kQ6EI:D35i3
 R3
-Ii3WPa=gk0>Of^dHfU:PiJ1
+IF?4@^IT3Pi]hE3UPe?mGD3
 R4
 S1
 R0
-w1743134182
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftLeft.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftLeft.sv
+w1743146124
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv
 !i122 3
-L0 1 14
+L0 1 10
 R6
 r1
 !s85 0
 31
-R18
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftLeft.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftLeft.sv|
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv|
 !i113 1
 R8
 R9
@@ -329,26 +329,26 @@ R10
 nshift@left
 vshiftRight
 R1
-R14
+R2
 !i10b 1
-!s100 _I^QA[3<K1O9jA7cg`Y;22
+!s100 k_Rb?YmOOhN6O[NP@R4Hk3
 R3
-I[0EYZ=5b_IDaF>;Ye>og01
+IOZU@;iMnELB>>Q46`d<Oo1
 R4
 S1
 R0
-R5
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftRight.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftRight.sv
+w1743146133
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv
 !i122 2
-L0 1 12
+R13
 R6
 r1
 !s85 0
 31
-R18
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftRight.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftRight.sv|
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv|
 !i113 1
 R8
 R9
@@ -356,52 +356,52 @@ R10
 nshift@right
 vsubtractor
 R1
-R14
+R18
 !i10b 1
 !s100 lb_KbKPgN?1`Ck4zEkDHG0
 R3
-I7BiVAjS:cDK0h`N;CUI`h3
+IM[aJ`TN:36d<3SC5<o4d?1
 R4
 S1
 R0
+R19
+R20
 R21
-R22
-R23
 !i122 1
 L0 12 26
 R6
 r1
 !s85 0
 31
+R22
+R23
 R24
-R25
-R26
 !i113 1
 R8
 R9
 R10
 vxorGate
 R1
-!s110 1743135575
+R18
 !i10b 1
 !s100 oH?zm<92lQ`Yz]Zlm_>]h2
 R3
-IzN?>9oz=>h?49EIc:oa;Y1
+I33`jaKADf`MYcU_iiK>?N0
 R4
 S1
 R0
-R21
-8C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/xorGate.sv
-FC:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/xorGate.sv
+R19
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv
 !i122 0
 R13
 R6
 r1
 !s85 0
 31
-R24
-!s107 C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/xorGate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1|C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/xorGate.sv|
+R22
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv|
 !i113 1
 R8
 R9

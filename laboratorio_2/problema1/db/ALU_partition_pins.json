@@ -4,19 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "result[0]",
+					"name" : "a_seg[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[1]",
+					"name" : "a_seg[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[2]",
+					"name" : "a_seg[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[3]",
+					"name" : "a_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "a_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "a_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "a_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "res_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "a_sign",
+					"strict" : false
+				},
+				{
+					"name" : "b_sign",
+					"strict" : false
+				},
+				{
+					"name" : "res_sign",
 					"strict" : false
 				},
 				{
@@ -36,19 +116,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "op[1]",
+					"name" : "a[0]",
 					"strict" : false
 				},
 				{
-					"name" : "op[3]",
+					"name" : "a[2]",
 					"strict" : false
 				},
 				{
-					"name" : "op[2]",
+					"name" : "a[3]",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[0]",
 					"strict" : false
 				},
 				{
@@ -60,27 +144,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "op[0]",
+					"name" : "b[1]",
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "selSwitches[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "selButtons[3]",
 					"strict" : false
 				},
 				{
-					"name" : "a[2]",
+					"name" : "selButtons[0]",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "selButtons[1]",
 					"strict" : false
 				},
 				{
-					"name" : "a[3]",
+					"name" : "selButtons[2]",
+					"strict" : false
+				},
+				{
+					"name" : "selSwitches[0]",
 					"strict" : false
 				}
 			]

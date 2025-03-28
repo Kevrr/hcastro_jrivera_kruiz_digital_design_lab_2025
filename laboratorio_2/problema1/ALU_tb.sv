@@ -74,7 +74,7 @@ module ALU_tb;
         
         // 8 bits
         a_8 = 8'd8; b_8 = 8'd8; #20;
-        assert(result_8 == 8'd64) else $error("failed %d * %d, expected = 641, got = %d", a_8, b_8, result_8);
+        assert(result_8 == 8'd64) else $error("failed %d * %d, expected = 64, got = %d", a_8, b_8, result_8);
         
         // 16 bits
         a_16 = 16'd16; b_16 = 16'd16; #20;

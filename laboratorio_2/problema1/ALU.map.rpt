@@ -1,6 +1,6 @@
 Analysis & Elaboration report for ALU
-Thu Mar 27 22:18:57 2025
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Fri Mar 28 01:10:22 2025
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -49,7 +49,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -66,22 +66,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                 ;
-+-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Mar 27 22:18:57 2025          ;
-; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                 ; ALU                                            ;
-; Top-level Entity Name         ; ALU                                            ;
-; Family                        ; Cyclone V                                      ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
-; Total registers               ; N/A until Partition Merge                      ;
-; Total pins                    ; N/A until Partition Merge                      ;
-; Total virtual pins            ; N/A until Partition Merge                      ;
-; Total block memory bits       ; N/A until Partition Merge                      ;
-; Total PLLs                    ; N/A until Partition Merge                      ;
-; Total DLLs                    ; N/A until Partition Merge                      ;
-+-------------------------------+------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Fri Mar 28 01:10:22 2025       ;
+; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                 ; ALU                                         ;
+; Top-level Entity Name         ; ALU                                         ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
 
 
 +------------------------------------------+
@@ -89,8 +89,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -225,7 +225,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
 ; Top-level entity name                                                           ; ALU                ; ALU                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -493,75 +493,79 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Thu Mar 27 22:18:44 2025
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Mar 28 01:10:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file xorgate.sv
-    Info (12023): Found entity 1: xorGate File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/xorGate.sv Line: 1
+    Info (12023): Found entity 1: xorGate File: E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file subtractor.sv
-    Info (12023): Found entity 1: full_subtractor File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv Line: 2
-    Info (12023): Found entity 2: subtractor File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv Line: 12
+    Info (12023): Found entity 1: full_subtractor File: E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv Line: 2
+    Info (12023): Found entity 2: subtractor File: E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file shiftright.sv
-    Info (12023): Found entity 1: shiftRight File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftRight.sv Line: 1
+    Info (12023): Found entity 1: shiftRight File: E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft.sv
-    Info (12023): Found entity 1: shiftLeft File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/shiftLeft.sv Line: 1
+    Info (12023): Found entity 1: shiftLeft File: E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file orgate.sv
-    Info (12023): Found entity 1: orGate File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/orGate.sv Line: 1
+    Info (12023): Found entity 1: orGate File: E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file multiplier.sv
-    Info (12023): Found entity 1: full_adder File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv Line: 1
-    Info (12023): Found entity 2: multiplier File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv Line: 9
+    Info (12023): Found entity 1: full_adder File: E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv Line: 1
+    Info (12023): Found entity 2: multiplier File: E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file modulo.sv
-    Info (12023): Found entity 1: modulo File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/modulo.sv Line: 1
+    Info (12023): Found entity 1: modulo File: E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file divider.sv
-    Info (12023): Found entity 1: divider File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/divider.sv Line: 1
+    Info (12023): Found entity 1: divider File: E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file andgate.sv
-    Info (12023): Found entity 1: andGate File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/andGate.sv Line: 1
+    Info (12023): Found entity 1: andGate File: E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sevenseg.sv
-    Info (12023): Found entity 1: sevenseg File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/sevenseg.sv Line: 1
+    Info (12023): Found entity 1: sevenseg File: E:/Documents/TDD/Labs/laboratorio_2/problema1/sevenseg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file getresult.sv
-    Info (12023): Found entity 1: getResult File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv Line: 1
+    Info (12023): Found entity 1: getResult File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file getoperation.sv
-    Info (12023): Found entity 1: getOperation File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getOperation.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(69): truncated literal to match 2 bits File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv Line: 69
-Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(73): truncated literal to match 4 bits File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv Line: 73
+    Info (12023): Found entity 1: getOperation File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getOperation.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(69): truncated literal to match 2 bits File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv Line: 69
+Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(73): truncated literal to match 4 bits File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv Line: 73
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU_tb.sv Line: 1
+    Info (12023): Found entity 1: ALU_tb File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file getsignednum.sv
+    Info (12023): Found entity 1: getSignedNum File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getSignedNum.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alufpga.sv
+    Info (12023): Found entity 1: ALUFPGA File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALUFPGA.sv Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "adder" for hierarchy "adder:add" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 12
-Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:sub" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 13
-Info (12128): Elaborating entity "full_subtractor" for hierarchy "subtractor:sub|full_subtractor:full_subtractors[0].fs" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/subtractor.sv Line: 31
-Info (12128): Elaborating entity "multiplier" for hierarchy "multiplier:mult" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 14
-Warning (10036): Verilog HDL or VHDL warning at multiplier.sv(15): object "carry" assigned a value but never read File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv Line: 15
-Info (12128): Elaborating entity "full_adder" for hierarchy "multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/multiplier.sv Line: 51
-Info (12128): Elaborating entity "divider" for hierarchy "divider:div" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 15
-Info (12128): Elaborating entity "modulo" for hierarchy "modulo:mod" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 16
-Info (12128): Elaborating entity "andGate" for hierarchy "andGate:AND" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 17
-Info (12128): Elaborating entity "orGate" for hierarchy "orGate:OR" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 18
-Info (12128): Elaborating entity "xorGate" for hierarchy "xorGate:XOR" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 19
-Info (12128): Elaborating entity "shiftRight" for hierarchy "shiftRight:sr" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 20
-Info (12128): Elaborating entity "shiftLeft" for hierarchy "shiftLeft:sl" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 21
-Info (12128): Elaborating entity "getResult" for hierarchy "getResult:getRes" File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.sv Line: 26
-Warning (10240): Verilog HDL Always Construct warning at getResult.sv(13): inferring latch(es) for variable "flags", which holds its previous value in one or more paths through the always construct File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv Line: 13
-Info (10041): Inferred latch for "flags[0]" at getResult.sv(13) File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv Line: 13
-Info (10041): Inferred latch for "flags[1]" at getResult.sv(13) File: C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/getResult.sv Line: 13
+Info (12128): Elaborating entity "adder" for hierarchy "adder:add" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 12
+Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:sub" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 13
+Info (12128): Elaborating entity "full_subtractor" for hierarchy "subtractor:sub|full_subtractor:full_subtractors[0].fs" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv Line: 31
+Info (12128): Elaborating entity "multiplier" for hierarchy "multiplier:mult" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 14
+Warning (10036): Verilog HDL or VHDL warning at multiplier.sv(15): object "carry" assigned a value but never read File: E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv Line: 15
+Info (12128): Elaborating entity "full_adder" for hierarchy "multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv Line: 51
+Info (12128): Elaborating entity "divider" for hierarchy "divider:div" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 15
+Info (12128): Elaborating entity "modulo" for hierarchy "modulo:mod" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 16
+Info (12128): Elaborating entity "andGate" for hierarchy "andGate:AND" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 17
+Info (12128): Elaborating entity "orGate" for hierarchy "orGate:OR" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 18
+Info (12128): Elaborating entity "xorGate" for hierarchy "xorGate:XOR" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 19
+Info (12128): Elaborating entity "shiftRight" for hierarchy "shiftRight:sr" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 20
+Info (12128): Elaborating entity "shiftLeft" for hierarchy "shiftLeft:sl" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 21
+Info (12128): Elaborating entity "getResult" for hierarchy "getResult:getRes" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 26
+Warning (10240): Verilog HDL Always Construct warning at getResult.sv(13): inferring latch(es) for variable "flags", which holds its previous value in one or more paths through the always construct File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 13
+Info (10041): Inferred latch for "flags[0]" at getResult.sv(13) File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 13
+Info (10041): Inferred latch for "flags[1]" at getResult.sv(13) File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 13
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.map.smsg
+Info (144001): Generated suppressed messages file E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Thu Mar 27 22:18:57 2025
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Fri Mar 28 01:10:22 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/zikito/Desktop/hcastro_jrivera_kruiz_digital_design_lab_2025-1/laboratorio_2/problema1/ALU.map.smsg.
+The suppressed messages can be found in E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.map.smsg.
 
 

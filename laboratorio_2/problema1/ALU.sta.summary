@@ -2,52 +2,52 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'op[1]'
-Slack : -3.837
-TNS   : -3.837
+Type  : Slow 1100mV 85C Model Setup 'selButtons[0]'
+Slack : -4.030
+TNS   : -7.929
 
-Type  : Slow 1100mV 85C Model Hold 'op[1]'
-Slack : 1.644
+Type  : Slow 1100mV 85C Model Hold 'selButtons[0]'
+Slack : 1.064
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'op[1]'
-Slack : 0.443
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'selButtons[0]'
+Slack : -0.385
+TNS   : -1.821
+
+Type  : Slow 1100mV 0C Model Setup 'selButtons[0]'
+Slack : -3.907
+TNS   : -7.791
+
+Type  : Slow 1100mV 0C Model Hold 'selButtons[0]'
+Slack : 0.913
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'op[1]'
-Slack : -3.802
-TNS   : -3.802
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'selButtons[0]'
+Slack : -0.371
+TNS   : -1.793
 
-Type  : Slow 1100mV 0C Model Hold 'op[1]'
-Slack : 1.628
+Type  : Fast 1100mV 85C Model Setup 'selButtons[0]'
+Slack : -2.815
+TNS   : -4.913
+
+Type  : Fast 1100mV 85C Model Hold 'selButtons[0]'
+Slack : 0.652
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'op[1]'
-Slack : 0.454
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'selButtons[0]'
+Slack : -0.330
+TNS   : -1.766
+
+Type  : Fast 1100mV 0C Model Setup 'selButtons[0]'
+Slack : -2.522
+TNS   : -4.303
+
+Type  : Fast 1100mV 0C Model Hold 'selButtons[0]'
+Slack : 0.558
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'op[1]'
-Slack : -2.060
-TNS   : -2.060
-
-Type  : Fast 1100mV 85C Model Hold 'op[1]'
-Slack : 0.622
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'op[1]'
-Slack : 0.109
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'op[1]'
-Slack : -1.851
-TNS   : -1.851
-
-Type  : Fast 1100mV 0C Model Hold 'op[1]'
-Slack : 0.555
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'op[1]'
-Slack : 0.097
-TNS   : 0.000
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'selButtons[0]'
+Slack : -0.308
+TNS   : -1.664
 
 ------------------------------------------------------------

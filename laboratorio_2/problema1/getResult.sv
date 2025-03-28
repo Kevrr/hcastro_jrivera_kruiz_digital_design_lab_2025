@@ -52,7 +52,11 @@ module getResult #(parameter n = 4)
 			4'b1001: begin
 				result <= sRRes;
 			end
-			default: result <= 'b0;
+			default: begin 
+				result <= 'b0;
+				flags[0] = 1'b0;
+				flags[1] = 1'b0;
+			end
 		endcase
 		
 		flags[3] = result[n - 1];
