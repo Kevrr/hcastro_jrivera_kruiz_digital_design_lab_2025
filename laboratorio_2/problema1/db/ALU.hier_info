@@ -1,4 +1,62 @@
-|ALU
+|ALUFPGA
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+selButtons[0] => selButtons[0].IN1
+selButtons[1] => selButtons[1].IN1
+selButtons[2] => selButtons[2].IN1
+selButtons[3] => selButtons[3].IN1
+selSwitches[0] => selSwitches[0].IN1
+selSwitches[1] => selSwitches[1].IN1
+a_seg[0] << sevenseg:displayA.port2
+a_seg[1] << sevenseg:displayA.port2
+a_seg[2] << sevenseg:displayA.port2
+a_seg[3] << sevenseg:displayA.port2
+a_seg[4] << sevenseg:displayA.port2
+a_seg[5] << sevenseg:displayA.port2
+a_seg[6] << sevenseg:displayA.port2
+b_seg[0] << sevenseg:displayB.port2
+b_seg[1] << sevenseg:displayB.port2
+b_seg[2] << sevenseg:displayB.port2
+b_seg[3] << sevenseg:displayB.port2
+b_seg[4] << sevenseg:displayB.port2
+b_seg[5] << sevenseg:displayB.port2
+b_seg[6] << sevenseg:displayB.port2
+res_seg[0] << sevenseg:displayRes.port2
+res_seg[1] << sevenseg:displayRes.port2
+res_seg[2] << sevenseg:displayRes.port2
+res_seg[3] << sevenseg:displayRes.port2
+res_seg[4] << sevenseg:displayRes.port2
+res_seg[5] << sevenseg:displayRes.port2
+res_seg[6] << sevenseg:displayRes.port2
+a_sign << a_sign.DB_MAX_OUTPUT_PORT_TYPE
+b_sign << b_sign.DB_MAX_OUTPUT_PORT_TYPE
+res_sign << res_sign.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] << ALU:ALU4bits.port4
+flags[1] << ALU:ALU4bits.port4
+flags[2] << ALU:ALU4bits.port4
+flags[3] << ALU:ALU4bits.port4
+
+
+|ALUFPGA|getOperation:getOp
+selButtons[0] => Decoder0.IN3
+selButtons[1] => Decoder0.IN2
+selButtons[2] => Decoder0.IN1
+selButtons[3] => Decoder0.IN0
+selSwitches[0] => Decoder0.IN5
+selSwitches[1] => Decoder0.IN4
+op[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+op[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+op[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+op[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|ALU:ALU4bits
 a[0] => a[0].IN11
 a[1] => a[1].IN11
 a[2] => a[2].IN11
@@ -11,17 +69,17 @@ op[0] => op[0].IN1
 op[1] => op[1].IN1
 op[2] => op[2].IN1
 op[3] => op[3].IN1
-result[0] << getResult:getRes.port15
-result[1] << getResult:getRes.port15
-result[2] << getResult:getRes.port15
-result[3] << getResult:getRes.port15
-flags[0] << getResult:getRes.port16
-flags[1] << getResult:getRes.port16
-flags[2] << getResult:getRes.port16
-flags[3] << getResult:getRes.port16
+result[0] <= getResult:getRes.port15
+result[1] <= getResult:getRes.port15
+result[2] <= getResult:getRes.port15
+result[3] <= getResult:getRes.port15
+flags[0] <= getResult:getRes.port16
+flags[1] <= getResult:getRes.port16
+flags[2] <= getResult:getRes.port16
+flags[3] <= getResult:getRes.port16
 
 
-|ALU|adder:add
+|ALUFPGA|ALU:ALU4bits|adder:add
 a[0] => y.IN0
 a[0] => c[0].IN0
 a[1] => c.IN0
@@ -46,7 +104,7 @@ y[4] <= c.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:sub
+|ALUFPGA|ALU:ALU4bits|subtractor:sub
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -62,7 +120,7 @@ y[3] <= full_subtractor:full_subtractors[3].fs.diff
 Cout <= full_subtractor:full_subtractors[3].fs.bout
 
 
-|ALU|subtractor:sub|full_subtractor:full_subtractors[0].fs
+|ALUFPGA|ALU:ALU4bits|subtractor:sub|full_subtractor:full_subtractors[0].fs
 a => diff.IN0
 a => bout.IN0
 a => bout.IN0
@@ -76,7 +134,7 @@ diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:sub|full_subtractor:full_subtractors[1].fs
+|ALUFPGA|ALU:ALU4bits|subtractor:sub|full_subtractor:full_subtractors[1].fs
 a => diff.IN0
 a => bout.IN0
 a => bout.IN0
@@ -90,7 +148,7 @@ diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:sub|full_subtractor:full_subtractors[2].fs
+|ALUFPGA|ALU:ALU4bits|subtractor:sub|full_subtractor:full_subtractors[2].fs
 a => diff.IN0
 a => bout.IN0
 a => bout.IN0
@@ -104,7 +162,7 @@ diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|subtractor:sub|full_subtractor:full_subtractors[3].fs
+|ALUFPGA|ALU:ALU4bits|subtractor:sub|full_subtractor:full_subtractors[3].fs
 a => diff.IN0
 a => bout.IN0
 a => bout.IN0
@@ -118,314 +176,27 @@ diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|multiplier:mult
-a[0] => partial_products.IN0
-a[0] => partial_products.IN0
-a[0] => partial_products.IN0
-a[0] => partial_products.IN0
-a[1] => partial_products.IN0
-a[1] => partial_products.IN0
-a[1] => partial_products.IN0
-a[1] => partial_products.IN0
-a[2] => partial_products.IN0
-a[2] => partial_products.IN0
-a[2] => partial_products.IN0
-a[2] => partial_products.IN0
-a[3] => partial_products.IN0
-a[3] => partial_products.IN0
-a[3] => partial_products.IN0
-a[3] => partial_products.IN0
-b[0] => partial_products.IN1
-b[0] => partial_products.IN1
-b[0] => partial_products.IN1
-b[0] => partial_products.IN1
-b[1] => partial_products.IN1
-b[1] => partial_products.IN1
-b[1] => partial_products.IN1
-b[1] => partial_products.IN1
-b[2] => partial_products.IN1
-b[2] => partial_products.IN1
-b[2] => partial_products.IN1
-b[2] => partial_products.IN1
-b[3] => partial_products.IN1
-b[3] => partial_products.IN1
-b[3] => partial_products.IN1
-b[3] => partial_products.IN1
-product[0] <= full_adder:add_partial_products[3].add_bits[0].fa.sum
-product[1] <= full_adder:add_partial_products[3].add_bits[1].fa.sum
-product[2] <= full_adder:add_partial_products[3].add_bits[2].fa.sum
-product[3] <= full_adder:add_partial_products[3].add_bits[3].fa.sum
-product[4] <= full_adder:add_partial_products[3].add_bits[4].fa.sum
-product[5] <= full_adder:add_partial_products[3].add_bits[5].fa.sum
-product[6] <= full_adder:add_partial_products[3].add_bits[6].fa.sum
-product[7] <= full_adder:add_partial_products[3].add_bits[7].fa.sum
+|ALUFPGA|ALU:ALU4bits|multiplier:mult
+a[0] => Mult0.IN3
+a[1] => Mult0.IN2
+a[2] => Mult0.IN1
+a[3] => Mult0.IN0
+b[0] => Mult0.IN7
+b[1] => Mult0.IN6
+b[2] => Mult0.IN5
+b[3] => Mult0.IN4
+multRes[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[8] <= <GND>
 
 
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[1].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[2].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[3].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[4].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[5].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[6].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[7].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[0].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[1].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[2].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[3].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[4].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[5].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[6].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[7].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[0].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[1].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[2].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[3].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[4].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[5].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[6].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[7].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|divider:div
+|ALUFPGA|ALU:ALU4bits|divider:div
 a[0] => Div0.IN3
 a[1] => Div0.IN2
 a[2] => Div0.IN1
@@ -440,22 +211,135 @@ y[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|modulo:mod
-a[0] => Mod0.IN3
-a[1] => Mod0.IN2
-a[2] => Mod0.IN1
-a[3] => Mod0.IN0
-b[0] => Mod0.IN7
-b[1] => Mod0.IN6
-b[2] => Mod0.IN5
-b[3] => Mod0.IN4
-y[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+|ALUFPGA|ALU:ALU4bits|modulo:mod
+a[0] => LessThan0.IN4
+a[0] => diff.IN0
+a[0] => remainder.DATAA
+a[0] => new_borrow.IN0
+a[1] => LessThan0.IN3
+a[1] => diff.IN0
+a[1] => remainder.DATAA
+a[1] => new_borrow.IN0
+a[1] => new_borrow.IN0
+a[2] => LessThan0.IN2
+a[2] => diff.IN0
+a[2] => remainder.DATAA
+a[2] => new_borrow.IN0
+a[2] => new_borrow.IN0
+a[3] => LessThan0.IN1
+a[3] => diff.IN0
+a[3] => remainder.DATAA
+b[0] => LessThan0.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan1.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan2.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan3.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan4.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan5.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan6.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan7.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[1] => LessThan0.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan1.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan2.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan3.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan4.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan5.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan6.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan7.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[2] => LessThan0.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan1.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan2.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan3.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan4.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan5.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan6.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan7.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[3] => LessThan0.IN5
+b[3] => diff.IN1
+b[3] => LessThan1.IN5
+b[3] => diff.IN1
+b[3] => LessThan2.IN5
+b[3] => diff.IN1
+b[3] => LessThan3.IN5
+b[3] => diff.IN1
+b[3] => LessThan4.IN5
+b[3] => diff.IN1
+b[3] => LessThan5.IN5
+b[3] => diff.IN1
+b[3] => LessThan6.IN5
+b[3] => diff.IN1
+b[3] => LessThan7.IN5
+b[3] => diff.IN1
+y[0] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|andGate:AND
+|ALUFPGA|ALU:ALU4bits|andGate:AND
 a[0] => y.IN0
 a[1] => y.IN0
 a[2] => y.IN0
@@ -470,7 +354,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|orGate:OR
+|ALUFPGA|ALU:ALU4bits|orGate:OR
 a[0] => y.IN0
 a[1] => y.IN0
 a[2] => y.IN0
@@ -485,7 +369,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|xorGate:XOR
+|ALUFPGA|ALU:ALU4bits|xorGate:XOR
 a[0] => y.IN0
 a[1] => y.IN0
 a[2] => y.IN0
@@ -500,12 +384,11 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|shiftRight:sr
+|ALUFPGA|ALU:ALU4bits|shiftRight:sr
 a[0] => ShiftRight0.IN4
 a[1] => ShiftRight0.IN3
 a[2] => ShiftRight0.IN2
 a[3] => ShiftRight0.IN1
-a[3] => sign.DATAIN
 displace[0] => ShiftRight0.IN8
 displace[1] => ShiftRight0.IN7
 displace[2] => ShiftRight0.IN6
@@ -514,26 +397,24 @@ y[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-sign <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|shiftLeft:sl
-a[0] => ShiftLeft0.IN8
-a[1] => ShiftLeft0.IN7
-a[2] => ShiftLeft0.IN6
-a[3] => ShiftLeft0.IN5
-displace[0] => ShiftLeft0.IN12
-displace[1] => ShiftLeft0.IN11
-displace[2] => ShiftLeft0.IN10
-displace[3] => ShiftLeft0.IN9
+|ALUFPGA|ALU:ALU4bits|shiftLeft:sl
+a[0] => ShiftLeft0.IN4
+a[1] => ShiftLeft0.IN3
+a[2] => ShiftLeft0.IN2
+a[3] => ShiftLeft0.IN1
+displace[0] => ShiftLeft0.IN8
+displace[1] => ShiftLeft0.IN7
+displace[2] => ShiftLeft0.IN6
+displace[3] => ShiftLeft0.IN5
 y[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-sign <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|getResult:getRes
+|ALUFPGA|ALU:ALU4bits|getResult:getRes
 a[0] => ~NO_FANOUT~
 a[1] => ~NO_FANOUT~
 a[2] => ~NO_FANOUT~
@@ -543,91 +424,202 @@ b[0] => ~NO_FANOUT~
 b[1] => ~NO_FANOUT~
 b[2] => ~NO_FANOUT~
 b[3] => always0.IN1
-addRes[0] => Mux4.IN6
-addRes[1] => Mux3.IN6
-addRes[2] => Mux2.IN6
-addRes[3] => Mux1.IN6
-subRes[0] => Mux4.IN7
-subRes[1] => Mux3.IN7
-subRes[2] => Mux2.IN7
-subRes[3] => Mux1.IN7
-divRes[0] => Mux4.IN8
-divRes[1] => Mux3.IN8
-divRes[2] => Mux2.IN8
-divRes[3] => Mux1.IN8
-modRes[0] => Mux4.IN9
-modRes[1] => Mux3.IN9
-modRes[2] => Mux2.IN9
-modRes[3] => Mux1.IN9
-andRes[0] => Mux4.IN10
-andRes[1] => Mux3.IN10
-andRes[2] => Mux2.IN10
-andRes[3] => Mux1.IN10
-orRes[0] => Mux4.IN11
-orRes[1] => Mux3.IN11
-orRes[2] => Mux2.IN11
-orRes[3] => Mux1.IN11
-xorRes[0] => Mux4.IN12
-xorRes[1] => Mux3.IN12
-xorRes[2] => Mux2.IN12
-xorRes[3] => Mux1.IN12
-sLRes[0] => Mux4.IN13
-sLRes[1] => Mux3.IN13
-sLRes[2] => Mux2.IN13
-sLRes[3] => Mux1.IN13
-sRRes[0] => Mux4.IN14
-sRRes[1] => Mux3.IN14
-sRRes[2] => Mux2.IN14
-sRRes[3] => Mux1.IN14
-multRes[0] => Mux4.IN15
-multRes[1] => Mux3.IN15
-multRes[2] => Mux2.IN15
-multRes[3] => Mux1.IN15
-multRes[4] => Equal0.IN31
-multRes[5] => Equal0.IN30
-multRes[6] => Equal0.IN29
-multRes[7] => Equal0.IN28
-addCout => Mux0.IN14
-subCout => Mux0.IN15
+addRes[0] => Mux3.IN6
+addRes[1] => Mux2.IN6
+addRes[2] => Mux1.IN6
+addRes[3] => Mux0.IN6
+subRes[0] => Mux3.IN7
+subRes[1] => Mux2.IN7
+subRes[2] => Mux1.IN7
+subRes[3] => Mux0.IN7
+divRes[0] => Mux3.IN8
+divRes[1] => Mux2.IN8
+divRes[2] => Mux1.IN8
+divRes[3] => Mux0.IN8
+modRes[0] => Mux3.IN9
+modRes[1] => Mux2.IN9
+modRes[2] => Mux1.IN9
+modRes[3] => Mux0.IN9
+andRes[0] => Mux3.IN10
+andRes[1] => Mux2.IN10
+andRes[2] => Mux1.IN10
+andRes[3] => Mux0.IN10
+orRes[0] => Mux3.IN11
+orRes[1] => Mux2.IN11
+orRes[2] => Mux1.IN11
+orRes[3] => Mux0.IN11
+xorRes[0] => Mux3.IN12
+xorRes[1] => Mux2.IN12
+xorRes[2] => Mux1.IN12
+xorRes[3] => Mux0.IN12
+sLRes[0] => Mux3.IN13
+sLRes[1] => Mux2.IN13
+sLRes[2] => Mux1.IN13
+sLRes[3] => Mux0.IN13
+sRRes[0] => Mux3.IN14
+sRRes[1] => Mux2.IN14
+sRRes[2] => Mux1.IN14
+sRRes[3] => Mux0.IN14
+multRes[0] => Mux3.IN15
+multRes[1] => Mux2.IN15
+multRes[2] => Mux1.IN15
+multRes[3] => Mux0.IN15
+multRes[4] => WideOr0.IN0
+multRes[5] => WideOr0.IN1
+multRes[6] => WideOr0.IN2
+multRes[7] => WideOr0.IN3
+addCout => Mux4.IN14
+subCout => Mux4.IN15
+op[0] => Mux0.IN19
 op[0] => Mux1.IN19
 op[0] => Mux2.IN19
 op[0] => Mux3.IN19
-op[0] => Mux4.IN19
-op[0] => Mux6.IN19
-op[0] => Mux7.IN19
-op[0] => Mux0.IN19
 op[0] => Mux5.IN19
+op[0] => Mux6.IN19
+op[0] => Mux4.IN19
+op[0] => Mux7.IN19
+op[1] => Mux0.IN18
 op[1] => Mux1.IN18
 op[1] => Mux2.IN18
 op[1] => Mux3.IN18
-op[1] => Mux4.IN18
-op[1] => Mux6.IN18
-op[1] => Mux7.IN18
-op[1] => Mux0.IN18
 op[1] => Mux5.IN18
+op[1] => Mux6.IN18
+op[1] => Mux4.IN18
+op[1] => Mux7.IN18
+op[2] => Mux0.IN17
 op[2] => Mux1.IN17
 op[2] => Mux2.IN17
 op[2] => Mux3.IN17
-op[2] => Mux4.IN17
-op[2] => Mux6.IN17
-op[2] => Mux7.IN17
-op[2] => Mux0.IN17
 op[2] => Mux5.IN17
+op[2] => Mux6.IN17
+op[2] => Mux4.IN17
+op[2] => Mux7.IN17
+op[3] => Mux0.IN16
 op[3] => Mux1.IN16
 op[3] => Mux2.IN16
 op[3] => Mux3.IN16
-op[3] => Mux4.IN16
-op[3] => Mux6.IN16
-op[3] => Mux7.IN16
-op[3] => Mux0.IN16
 op[3] => Mux5.IN16
-result[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+op[3] => Mux6.IN16
+op[3] => Mux4.IN16
+op[3] => Mux7.IN16
+result[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 flags[0] <= flags[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 flags[1] <= flags[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-flags[2] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
-flags[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+flags[2] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|getSignedNum:getSignedA
+x[0] => x_signed.DATAA
+x[0] => x_signed.DATAB
+x[1] => x_signed.DATAA
+x[1] => x_signed.DATAB
+x[2] => x_signed.DATAA
+x[2] => x_signed.DATAB
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_sign.DATAIN
+x_sign <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+x_signed[0] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+x_signed[1] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+x_signed[2] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|getSignedNum:getSignedB
+x[0] => x_signed.DATAA
+x[0] => x_signed.DATAB
+x[1] => x_signed.DATAA
+x[1] => x_signed.DATAB
+x[2] => x_signed.DATAA
+x[2] => x_signed.DATAB
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_sign.DATAIN
+x_sign <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+x_signed[0] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+x_signed[1] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+x_signed[2] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|getSignedNum:getSignedRes
+x[0] => x_signed.DATAA
+x[0] => x_signed.DATAB
+x[1] => x_signed.DATAA
+x[1] => x_signed.DATAB
+x[2] => x_signed.DATAA
+x[2] => x_signed.DATAB
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_signed.OUTPUTSELECT
+x[3] => x_sign.DATAIN
+x_sign <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+x_signed[0] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+x_signed[1] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+x_signed[2] <= x_signed.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|sevenseg:displayA
+x[0] => Mux0.IN9
+x[0] => Decoder0.IN2
+x[1] => Mux0.IN8
+x[1] => Decoder0.IN1
+x[2] => Mux0.IN7
+x[2] => Decoder0.IN0
+x_sign => Mux0.IN10
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|sevenseg:displayB
+x[0] => Mux0.IN9
+x[0] => Decoder0.IN2
+x[1] => Mux0.IN8
+x[1] => Decoder0.IN1
+x[2] => Mux0.IN7
+x[2] => Decoder0.IN0
+x_sign => Mux0.IN10
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|sevenseg:displayRes
+x[0] => Mux0.IN9
+x[0] => Decoder0.IN2
+x[1] => Mux0.IN8
+x[1] => Decoder0.IN1
+x[2] => Mux0.IN7
+x[2] => Decoder0.IN0
+x_sign => Mux0.IN10
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

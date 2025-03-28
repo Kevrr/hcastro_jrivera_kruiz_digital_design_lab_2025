@@ -22,7 +22,7 @@ module ALU #(parameter n = 4)
 	
 	getResult #(n) getRes(a, b, addRes, subRes, divRes, 
 								 modRes, andRes, orRes, xorRes, 
-								 sLRes, multRes, sRRes, addCout, 
+								 sLRes, sRRes, multRes,  addCout, 
 								 subCout, op, result, flags);
 									
 endmodule

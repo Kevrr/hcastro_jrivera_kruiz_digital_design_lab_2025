@@ -1,10 +1,11 @@
 module sevenseg(input logic [2: 0] x,
+					 input logic x_sign,
 					 output logic [6: 0] seg);
 					 
 	always_comb begin
 		case (x) 
 							 //b6543201
-			3'h0: seg <= 7'b1000000; // 0
+			3'h0: seg <= {x_sign, 6'b000000}; // 0
 			3'h1: seg <= 7'b1111001; // 1
 			3'h2: seg <= 7'b0100100; // 2
 			3'h3: seg <= 7'b0110000; // 3

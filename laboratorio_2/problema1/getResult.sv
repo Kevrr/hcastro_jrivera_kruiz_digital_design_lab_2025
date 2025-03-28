@@ -15,21 +15,19 @@ module getResult #(parameter n = 4)
 				result <= addRes;
 				flags[1] = addCout;
 				if (a[n - 1] == b[n - 1]) begin
-					flags [0] = a[n - 1] != result[n-1];
+					flags[0] = a[n - 1] != result[n-1];
 				end
 			end
 			4'b0001: begin
 				result <= subRes;
 				flags[1] = subCout;
 				if (a[n - 1] != b[n - 1]) begin
-					flags [0] = a[n - 1] != result[n - 1];
+					flags[0] = a[n - 1] != result[n - 1];
 				end
 			end
 			4'b0010: begin
 				result <= multRes[n - 1: 0];
-				if (multRes[2*n - 1: n] != 0) begin
-					flags [0] = 1'b1;
-				end
+				flags[0] = |multRes[2*n - 1: n];
 			end
 			4'b0011: begin
 				result <= divRes;

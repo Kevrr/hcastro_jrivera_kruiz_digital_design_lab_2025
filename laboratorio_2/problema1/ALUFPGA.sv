@@ -18,11 +18,11 @@ module ALUFPGA(input logic [3: 0] a, b,
 	
 	getSignedNum getSignedRes(result, res_sign, res_signed);
 	
-	sevenseg displayA(a_signed, a_seg);
+	sevenseg displayA(a_signed, a_sign, a_seg);
 	
-	sevenseg displayB(b_signed, b_seg);
+	sevenseg displayB(b_signed, b_sign, b_seg);
 	
-	sevenseg displayRes(res_signed, res_seg);
+	sevenseg displayRes(res_signed, res_sign, res_seg);
 	
 endmodule
 	
