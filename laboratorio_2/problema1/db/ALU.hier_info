@@ -15,6 +15,11 @@ result[0] << getResult:getRes.port15
 result[1] << getResult:getRes.port15
 result[2] << getResult:getRes.port15
 result[3] << getResult:getRes.port15
+result[4] << getResult:getRes.port15
+result[5] << getResult:getRes.port15
+result[6] << getResult:getRes.port15
+result[7] << getResult:getRes.port15
+result[8] << getResult:getRes.port15
 flags[0] << getResult:getRes.port16
 flags[1] << getResult:getRes.port16
 flags[2] << getResult:getRes.port16
@@ -119,310 +124,23 @@ bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|multiplier:mult
-a[0] => partial_products.IN0
-a[0] => partial_products.IN0
-a[0] => partial_products.IN0
-a[0] => partial_products.IN0
-a[1] => partial_products.IN0
-a[1] => partial_products.IN0
-a[1] => partial_products.IN0
-a[1] => partial_products.IN0
-a[2] => partial_products.IN0
-a[2] => partial_products.IN0
-a[2] => partial_products.IN0
-a[2] => partial_products.IN0
-a[3] => partial_products.IN0
-a[3] => partial_products.IN0
-a[3] => partial_products.IN0
-a[3] => partial_products.IN0
-b[0] => partial_products.IN1
-b[0] => partial_products.IN1
-b[0] => partial_products.IN1
-b[0] => partial_products.IN1
-b[1] => partial_products.IN1
-b[1] => partial_products.IN1
-b[1] => partial_products.IN1
-b[1] => partial_products.IN1
-b[2] => partial_products.IN1
-b[2] => partial_products.IN1
-b[2] => partial_products.IN1
-b[2] => partial_products.IN1
-b[3] => partial_products.IN1
-b[3] => partial_products.IN1
-b[3] => partial_products.IN1
-b[3] => partial_products.IN1
-product[0] <= full_adder:add_partial_products[3].add_bits[0].fa.sum
-product[1] <= full_adder:add_partial_products[3].add_bits[1].fa.sum
-product[2] <= full_adder:add_partial_products[3].add_bits[2].fa.sum
-product[3] <= full_adder:add_partial_products[3].add_bits[3].fa.sum
-product[4] <= full_adder:add_partial_products[3].add_bits[4].fa.sum
-product[5] <= full_adder:add_partial_products[3].add_bits[5].fa.sum
-product[6] <= full_adder:add_partial_products[3].add_bits[6].fa.sum
-product[7] <= full_adder:add_partial_products[3].add_bits[7].fa.sum
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[1].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[2].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[3].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[4].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[5].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[6].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[7].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[0].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[1].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[2].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[3].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[4].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[5].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[6].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[7].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[0].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[1].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[2].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[3].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[4].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[5].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[6].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[7].fa
-a => sum.IN0
-a => cout.IN0
-b => sum.IN1
-b => cout.IN1
-cin => sum.IN1
-cin => cout.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => Mult0.IN3
+a[1] => Mult0.IN2
+a[2] => Mult0.IN1
+a[3] => Mult0.IN0
+b[0] => Mult0.IN7
+b[1] => Mult0.IN6
+b[2] => Mult0.IN5
+b[3] => Mult0.IN4
+multRes[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+multRes[8] <= <GND>
 
 
 |ALU|divider:div
@@ -441,18 +159,131 @@ y[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|modulo:mod
-a[0] => Mod0.IN3
-a[1] => Mod0.IN2
-a[2] => Mod0.IN1
-a[3] => Mod0.IN0
-b[0] => Mod0.IN7
-b[1] => Mod0.IN6
-b[2] => Mod0.IN5
-b[3] => Mod0.IN4
-y[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => LessThan0.IN4
+a[0] => diff.IN0
+a[0] => remainder.DATAA
+a[0] => new_borrow.IN0
+a[1] => LessThan0.IN3
+a[1] => diff.IN0
+a[1] => remainder.DATAA
+a[1] => new_borrow.IN0
+a[1] => new_borrow.IN0
+a[2] => LessThan0.IN2
+a[2] => diff.IN0
+a[2] => remainder.DATAA
+a[2] => new_borrow.IN0
+a[2] => new_borrow.IN0
+a[3] => LessThan0.IN1
+a[3] => diff.IN0
+a[3] => remainder.DATAA
+b[0] => LessThan0.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan1.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan2.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan3.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan4.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan5.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan6.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[0] => LessThan7.IN8
+b[0] => diff.IN1
+b[0] => new_borrow.IN1
+b[1] => LessThan0.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan1.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan2.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan3.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan4.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan5.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan6.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[1] => LessThan7.IN7
+b[1] => diff.IN1
+b[1] => new_borrow.IN1
+b[1] => new_borrow.IN1
+b[2] => LessThan0.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan1.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan2.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan3.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan4.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan5.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan6.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[2] => LessThan7.IN6
+b[2] => diff.IN1
+b[2] => new_borrow.IN1
+b[2] => new_borrow.IN1
+b[3] => LessThan0.IN5
+b[3] => diff.IN1
+b[3] => LessThan1.IN5
+b[3] => diff.IN1
+b[3] => LessThan2.IN5
+b[3] => diff.IN1
+b[3] => LessThan3.IN5
+b[3] => diff.IN1
+b[3] => LessThan4.IN5
+b[3] => diff.IN1
+b[3] => LessThan5.IN5
+b[3] => diff.IN1
+b[3] => LessThan6.IN5
+b[3] => diff.IN1
+b[3] => LessThan7.IN5
+b[3] => diff.IN1
+y[0] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= remainder.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|andGate:AND

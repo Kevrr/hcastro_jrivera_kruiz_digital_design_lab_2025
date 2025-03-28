@@ -1,12 +1,12 @@
 module ALU #(parameter n = 4)
 	(input logic [n - 1: 0] a, b,
 	 input logic [3: 0] op,
-	 output logic [n-1: 0] result,
+	 output logic [2*n: 0] result,
 	 output logic [3: 0] flags); // N Z C V
 	 
 	logic [n - 1: 0] addRes, subRes, divRes, modRes, 
 						  andRes, orRes, xorRes, sLRes, sRRes;
-	logic [2*n - 1: 0] multRes;
+	logic [2*n: 0] multRes;
 	logic addCout, subCout;
 	 
 	adder #(n) add(.a(a), .b(b), .y(addRes), .Cout(addCout));
