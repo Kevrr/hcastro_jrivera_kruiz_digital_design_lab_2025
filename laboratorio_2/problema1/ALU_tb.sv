@@ -105,13 +105,13 @@ module ALU_tb;
         a_4 = 4'b1001; b_4 = 4'b0110; #20;
         assert(result_4 == 4'b1111) else $error("failed %b ^ %b, expected = 1111, got = %b", a_4, b_4, result_4);
 
-        op = 4'b1000; // sr
-        a_4 = 4'b1100; b_4 = 4'd2; #20;
-        assert(result_4 == 4'b0011) else $error("failed %b >> %d, expected = 0011, got = %b", a_4, b_4, result_4);
-
-        op = 4'b1001; // sl
+        op = 4'b1000; // sl
         a_4 = 4'b1100; b_4 = 4'd2; #20;
         assert(result_4 == 4'b0000) else $error("failed %b << %d, expected = 0000, got = %b", a_4, b_4, result_4);
+
+        op = 4'b1001; // sr
+        a_4 = 4'b1100; b_4 = 4'd2; #20;
+        assert(result_4 == 4'b0011) else $error("failed %b >> %d, expected = 0011, got = %b", a_4, b_4, result_4);
 
         $display("Todos los casos pasaron correctamente.");
     end

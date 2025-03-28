@@ -11,7 +11,7 @@ cModel Technology
 Z0 dE:/Documents/TDD/Labs/laboratorio_2/problema1/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1743168256
+Z2 !s110 1743178614
 !i10b 1
 !s100 nKjhX^1=T7AFLCiFk^nbK3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1743168256.000000
+Z7 !s108 1743178614.000000
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv|
 !i113 1
@@ -39,13 +39,13 @@ vALU
 R1
 R2
 !i10b 1
-!s100 YP5dD@3^j_fST:8[7:lfd2
+!s100 ]A`EA<kjSe;BXl:C0:j7P1
 R3
-I04;g94<6HeF;c_EQ?[9^H0
+IPzLY@KbAS^:Qn_gJ<XTLH0
 R4
 S1
 R0
-Z11 w1743168145
+w1743178592
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv
 !i122 11
@@ -64,15 +64,15 @@ R10
 n@a@l@u
 vALU_tb
 R1
-!s110 1743168257
+R2
 !i10b 1
-!s100 ^19:O?_A;:OD<[Ylf4G<C2
+!s100 Ed_]Wnc7FYE5K^1b]ZGbl0
 R3
-I1LO@MW11B4X6GD9@hE@`?3
+INU>ohc1OC6UkI0la]hb@o0
 R4
 S1
 R0
-R11
+w1743178267
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv
 !i122 12
@@ -81,7 +81,7 @@ R6
 r1
 !s85 0
 31
-!s108 1743168257.000000
+R7
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv|
 !i113 1
@@ -103,7 +103,7 @@ R5
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv
 !i122 8
-Z12 L0 1 9
+Z11 L0 1 9
 R6
 r1
 !s85 0
@@ -130,7 +130,7 @@ R5
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv
 !i122 7
-R12
+R11
 R6
 r1
 !s85 0
@@ -144,7 +144,7 @@ R9
 R10
 vfull_subtractor
 R1
-R2
+Z12 !s110 1743178613
 !i10b 1
 !s100 _;B;>jPWjfV4`Nd]=7;Dl0
 R3
@@ -161,9 +161,9 @@ R6
 r1
 !s85 0
 31
-R7
-Z16 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
-Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
+Z16 !s108 1743178613.000000
+Z17 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
 !i113 1
 R8
 R9
@@ -172,17 +172,17 @@ vgetResult
 R1
 R2
 !i10b 1
-!s100 7fI4InEo[`DG7z>WgGZ0T0
+!s100 1WfXNeHFPe2=0clVeRE_@0
 R3
-I^^fP<z124YD?7<7Lai<[43
+ICY=4[Nkf4]N9D9;TH?T=L3
 R4
 S1
 R0
-Z18 w1743168146
+w1743169055
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv
 !i122 10
-L0 1 66
+L0 1 64
 R6
 r1
 !s85 0
@@ -214,7 +214,7 @@ R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv|
 !i113 1
@@ -223,15 +223,15 @@ R9
 R10
 vmultiplier
 R1
-R2
+R12
 !i10b 1
-!s100 34MbSUzBjbT1@LUbBNWaL3
+!s100 SL@7VBFKU5e1T0FBonJd:2
 R3
-IedzSXV[LW]cGSXkoHjXm:1
+I^el2kZhk:[m>G1<?a1K:N2
 R4
 S1
 R0
-w1743168155
+w1743169281
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv
 !i122 5
@@ -240,7 +240,7 @@ R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv|
 !i113 1
@@ -249,7 +249,7 @@ R9
 R10
 vorGate
 R1
-R2
+R12
 !i10b 1
 !s100 imQN829bQoSU`zQdecRU]3
 R3
@@ -261,12 +261,12 @@ R5
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv
 !i122 4
-R12
+R11
 R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv|
 !i113 1
@@ -276,7 +276,7 @@ R10
 nor@gate
 vshiftLeft
 R1
-R2
+R12
 !i10b 1
 !s100 e4^TmOg:eM7kQ6EI:D35i3
 R3
@@ -284,7 +284,7 @@ IF?4@^IT3Pi]hE3UPe?mGD3
 R4
 S1
 R0
-R18
+Z19 w1743168146
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv
 !i122 3
@@ -293,7 +293,7 @@ R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv|
 !i113 1
@@ -303,7 +303,7 @@ R10
 nshift@left
 vshiftRight
 R1
-R2
+R12
 !i10b 1
 !s100 k_Rb?YmOOhN6O[NP@R4Hk3
 R3
@@ -311,16 +311,16 @@ IOZU@;iMnELB>>Q46`d<Oo1
 R4
 S1
 R0
-R18
+R19
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv
 !i122 2
-R12
+R11
 R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv|
 !i113 1
@@ -330,7 +330,7 @@ R10
 nshift@right
 vsubtractor
 R1
-R2
+R12
 !i10b 1
 !s100 lb_KbKPgN?1`Ck4zEkDHG0
 R3
@@ -347,16 +347,16 @@ R6
 r1
 !s85 0
 31
-R7
 R16
 R17
+R18
 !i113 1
 R8
 R9
 R10
 vxorGate
 R1
-R2
+R12
 !i10b 1
 !s100 oH?zm<92lQ`Yz]Zlm_>]h2
 R3
@@ -368,12 +368,12 @@ R13
 8E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv
 FE:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv
 !i122 0
-R12
+R11
 R6
 r1
 !s85 0
 31
-!s108 1743168255.000000
+R16
 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv|
 !i113 1

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Fri Mar 28 07:51:40 2025
+Fri Mar 28 10:18:01 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -25,8 +25,8 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  17. Parameter Settings for User Entity Instance: ALU:ALU4bits|andGate:AND
  18. Parameter Settings for User Entity Instance: ALU:ALU4bits|orGate:OR
  19. Parameter Settings for User Entity Instance: ALU:ALU4bits|xorGate:XOR
- 20. Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftRight:sr
- 21. Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftLeft:sl
+ 20. Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftLeft:sl
+ 21. Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftRight:sr
  22. Parameter Settings for User Entity Instance: ALU:ALU4bits|getResult:getRes
  23. Parameter Settings for Inferred Entity Instance: ALU:ALU4bits|divider:div|lpm_divide:Div0
  24. Port Connectivity Checks: "ALU:ALU4bits|multiplier:mult"
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar 28 07:51:40 2025       ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar 28 10:18:01 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ALU                                         ;
 ; Top-level Entity Name           ; ALUFPGA                                     ;
@@ -400,16 +400,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftRight:sr ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; n              ; 4     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftLeft:sl ;
 +----------------+-------+-----------------------------------------------+
@@ -417,6 +407,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------+
 ; n              ; 4     ; Signed Integer                                ;
 +----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU4bits|shiftRight:sr ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 4     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -526,7 +526,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 28 07:51:33 2025
+    Info: Processing started: Fri Mar 28 10:17:53 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -579,8 +579,8 @@ Info (12128): Elaborating entity "modulo" for hierarchy "ALU:ALU4bits|modulo:mod
 Info (12128): Elaborating entity "andGate" for hierarchy "ALU:ALU4bits|andGate:AND" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 17
 Info (12128): Elaborating entity "orGate" for hierarchy "ALU:ALU4bits|orGate:OR" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 18
 Info (12128): Elaborating entity "xorGate" for hierarchy "ALU:ALU4bits|xorGate:XOR" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 19
-Info (12128): Elaborating entity "shiftRight" for hierarchy "ALU:ALU4bits|shiftRight:sr" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 20
-Info (12128): Elaborating entity "shiftLeft" for hierarchy "ALU:ALU4bits|shiftLeft:sl" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 21
+Info (12128): Elaborating entity "shiftLeft" for hierarchy "ALU:ALU4bits|shiftLeft:sl" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 20
+Info (12128): Elaborating entity "shiftRight" for hierarchy "ALU:ALU4bits|shiftRight:sr" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 21
 Info (12128): Elaborating entity "getResult" for hierarchy "ALU:ALU4bits|getResult:getRes" File: E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv Line: 26
 Warning (10240): Verilog HDL Always Construct warning at getResult.sv(13): inferring latch(es) for variable "flags", which holds its previous value in one or more paths through the always construct File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 13
 Info (10041): Inferred latch for "flags[0]" at getResult.sv(13) File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 13
@@ -618,9 +618,9 @@ Info (21057): Implemented 190 device resources after synthesis - the final resou
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 4893 megabytes
-    Info: Processing ended: Fri Mar 28 07:51:40 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Fri Mar 28 10:18:01 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+

@@ -17,8 +17,8 @@ module ALU #(parameter n = 4)
 	andGate #(n) AND(a, b, andRes);
 	orGate #(n) OR(a, b, orRes);
 	xorGate #(n) XOR(a, b, xorRes);
-	shiftRight #(n) sr(a, b, sLRes);
-	shiftLeft #(n) sl(a, b, sRRes);
+	shiftLeft #(n) sl(a, b, sLRes);
+	shiftRight #(n) sr(a, b, sRRes);
 	
 	getResult #(n) getRes(a, b, addRes, subRes, divRes, 
 								 modRes, andRes, orRes, xorRes, 

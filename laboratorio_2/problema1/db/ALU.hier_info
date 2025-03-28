@@ -384,21 +384,6 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUFPGA|ALU:ALU4bits|shiftRight:sr
-a[0] => ShiftRight0.IN4
-a[1] => ShiftRight0.IN3
-a[2] => ShiftRight0.IN2
-a[3] => ShiftRight0.IN1
-displace[0] => ShiftRight0.IN8
-displace[1] => ShiftRight0.IN7
-displace[2] => ShiftRight0.IN6
-displace[3] => ShiftRight0.IN5
-y[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |ALUFPGA|ALU:ALU4bits|shiftLeft:sl
 a[0] => ShiftLeft0.IN4
 a[1] => ShiftLeft0.IN3
@@ -412,6 +397,21 @@ y[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALUFPGA|ALU:ALU4bits|shiftRight:sr
+a[0] => ShiftRight0.IN4
+a[1] => ShiftRight0.IN3
+a[2] => ShiftRight0.IN2
+a[3] => ShiftRight0.IN1
+displace[0] => ShiftRight0.IN8
+displace[1] => ShiftRight0.IN7
+displace[2] => ShiftRight0.IN6
+displace[3] => ShiftRight0.IN5
+y[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALUFPGA|ALU:ALU4bits|getResult:getRes
