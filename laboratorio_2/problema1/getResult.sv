@@ -6,7 +6,7 @@ module getResult #(parameter n = 4)
 	 input logic [2*n - 1: 0] multRes,
 	 input logic addCout, subCout,
 	 input logic [3: 0] op,
-	 output logic [n: 0] result,
+	 output logic [n-1: 0] result,
 	 output logic [3: 0] flags);
 	 
 	always @(*) begin
@@ -15,7 +15,7 @@ module getResult #(parameter n = 4)
 				result <= addRes;
 				flags[1] = addCout;
 				if (a[n - 1] == b[n - 1]) begin
-					flags [0] = a[n - 1] != result[n];
+					flags [0] = a[n - 1] != result[n-1];
 				end
 			end
 			4'b0001: begin

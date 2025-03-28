@@ -26,4 +26,3 @@ module ALU #(parameter n = 4)
 								 subCout, op, result, flags);
 									
 endmodule
-	

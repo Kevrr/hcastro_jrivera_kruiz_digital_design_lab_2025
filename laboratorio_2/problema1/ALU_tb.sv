@@ -1,9 +1,10 @@
 module ALU_tb;
-    logic [1:0] a_2, b_2, result_2;
-    logic [3:0] a_4, b_4, result_4;
-    logic [7:0] a_8, b_8, result_8;
-    logic [15:0] a_16, b_16, result_16;
-    logic [31:0] a_32, b_32, result_32;
+    logic [1:0] a_2, b_2;
+    logic [3:0] result_2, a_4, b_4;
+    logic [7:0] result_4, a_8, b_8;
+    logic [15:0] result_8, a_16, b_16;
+    logic [31:0] result_16, a_32, b_32;
+	 logic [63:0] result_32;
     logic [3:0] op;
     logic [3:0] flags_2, flags_4, flags_8, flags_16, flags_32;
 
@@ -73,7 +74,7 @@ module ALU_tb;
         
         // 8 bits
         a_8 = 8'd8; b_8 = 8'd8; #20;
-        assert(result_8 == 8'd64) else $error("failed %d * %d, expected = 64, got = %d", a_8, b_8, result_8);
+        assert(result_8 == 8'd64) else $error("failed %d * %d, expected = 641, got = %d", a_8, b_8, result_8);
         
         // 16 bits
         a_16 = 16'd16; b_16 = 16'd16; #20;

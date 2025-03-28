@@ -158,7 +158,7 @@ product[3] <= full_adder:add_partial_products[3].add_bits[3].fa.sum
 product[4] <= full_adder:add_partial_products[3].add_bits[4].fa.sum
 product[5] <= full_adder:add_partial_products[3].add_bits[5].fa.sum
 product[6] <= full_adder:add_partial_products[3].add_bits[6].fa.sum
-product[7] <= full_adder:add_partial_products[3].add_bits[6].fa.cout
+product[7] <= full_adder:add_partial_products[3].add_bits[7].fa.sum
 
 
 |ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[0].fa
@@ -228,6 +228,17 @@ cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[6].fa
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplier:mult|full_adder:add_partial_products[1].add_bits[7].fa
 a => sum.IN0
 a => cout.IN0
 b => sum.IN1
@@ -315,6 +326,17 @@ sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|ALU|multiplier:mult|full_adder:add_partial_products[2].add_bits[7].fa
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[0].fa
 a => sum.IN0
 a => cout.IN0
@@ -382,6 +404,17 @@ cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[6].fa
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|multiplier:mult|full_adder:add_partial_products[3].add_bits[7].fa
 a => sum.IN0
 a => cout.IN0
 b => sum.IN1
@@ -485,20 +518,19 @@ sign <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|shiftLeft:sl
-a[0] => ShiftLeft0.IN4
-a[1] => ShiftLeft0.IN3
-a[2] => ShiftLeft0.IN2
-a[3] => ShiftLeft0.IN1
-a[3] => sign.DATAIN
-displace[0] => ShiftLeft0.IN8
-displace[1] => ShiftLeft0.IN7
-displace[2] => ShiftLeft0.IN6
-displace[3] => ShiftLeft0.IN5
+a[0] => ShiftLeft0.IN8
+a[1] => ShiftLeft0.IN7
+a[2] => ShiftLeft0.IN6
+a[3] => ShiftLeft0.IN5
+displace[0] => ShiftLeft0.IN12
+displace[1] => ShiftLeft0.IN11
+displace[2] => ShiftLeft0.IN10
+displace[3] => ShiftLeft0.IN9
 y[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-sign <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+sign <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|getResult:getRes
@@ -507,7 +539,6 @@ a[1] => ~NO_FANOUT~
 a[2] => ~NO_FANOUT~
 a[3] => always0.IN0
 a[3] => flags.IN1
-a[3] => Mux6.IN15
 b[0] => ~NO_FANOUT~
 b[1] => ~NO_FANOUT~
 b[2] => ~NO_FANOUT~
@@ -594,7 +625,6 @@ result[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= <GND>
 flags[0] <= flags[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 flags[1] <= flags[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 flags[2] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
