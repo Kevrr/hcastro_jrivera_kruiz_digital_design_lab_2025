@@ -1,0 +1,13 @@
+module getSignedNum (input logic [3: 0] x,
+							output logic x_sign,
+							output logic [2: 0] x_signed);
+	
+	assign x_sign = x[3];
+	assign x_signed = x[2: 0]
+	always_comb begin
+		if (x_sign) begin 
+			x_signed = ~x[2: 0];
+			x_signed += 1;
+		end
+	end
+endmodule

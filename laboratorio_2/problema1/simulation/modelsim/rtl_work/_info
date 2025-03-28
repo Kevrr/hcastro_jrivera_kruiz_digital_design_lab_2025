@@ -1,0 +1,383 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Documents/TDD/Labs/laboratorio_2/problema1/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1743178614
+!i10b 1
+!s100 nKjhX^1=T7AFLCiFk^nbK3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA34oP;M<<1GLU?d8NHTA20
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1743167714
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv
+!i122 9
+L0 1 23
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1743178614.000000
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/adder.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1
+Z10 tCvgOpt 0
+vALU
+R1
+R2
+!i10b 1
+!s100 ]A`EA<kjSe;BXl:C0:j7P1
+R3
+IPzLY@KbAS^:Qn_gJ<XTLH0
+R4
+S1
+R0
+w1743178592
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv
+!i122 11
+L0 1 28
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u
+vALU_tb
+R1
+R2
+!i10b 1
+!s100 Ed_]Wnc7FYE5K^1b]ZGbl0
+R3
+INU>ohc1OC6UkI0la]hb@o0
+R4
+S1
+R0
+w1743178267
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv
+!i122 12
+L0 1 118
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/ALU_tb.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u_tb
+vandGate
+R1
+R2
+!i10b 1
+!s100 :zz1gX18PfP8naQTF>>a^0
+R3
+If@]3d4ckAMEGMYi5>IMSi3
+R4
+S1
+R0
+R5
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv
+!i122 8
+Z11 L0 1 9
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/andGate.sv|
+!i113 1
+R8
+R9
+R10
+nand@gate
+vdivider
+R1
+R2
+!i10b 1
+!s100 E_[_3LIzKTkEPg;ak@[zJ1
+R3
+IX<Fc1Zhe4;nl6@J3g>VY03
+R4
+S1
+R0
+R5
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv
+!i122 7
+R11
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/divider.sv|
+!i113 1
+R8
+R9
+R10
+vfull_subtractor
+R1
+Z12 !s110 1743178613
+!i10b 1
+!s100 _;B;>jPWjfV4`Nd]=7;Dl0
+R3
+IEh^=g?[J=P7C8JzoJa?oh0
+R4
+S1
+R0
+Z13 w1743167715
+Z14 8E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv
+Z15 FE:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv
+!i122 1
+L0 2 8
+R6
+r1
+!s85 0
+31
+Z16 !s108 1743178613.000000
+Z17 !s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/subtractor.sv|
+!i113 1
+R8
+R9
+R10
+vgetResult
+R1
+R2
+!i10b 1
+!s100 1WfXNeHFPe2=0clVeRE_@0
+R3
+ICY=4[Nkf4]N9D9;TH?T=L3
+R4
+S1
+R0
+w1743169055
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv
+!i122 10
+L0 1 64
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv|
+!i113 1
+R8
+R9
+R10
+nget@result
+vmodulo
+R1
+R2
+!i10b 1
+!s100 hR4ScRWW9d0emUDWgDicV3
+R3
+I;73DNL`kSJ56gB]_Nn81M0
+R4
+S1
+R0
+w1743168162
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv
+!i122 6
+L0 1 36
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/modulo.sv|
+!i113 1
+R8
+R9
+R10
+vmultiplier
+R1
+R12
+!i10b 1
+!s100 SL@7VBFKU5e1T0FBonJd:2
+R3
+I^el2kZhk:[m>G1<?a1K:N2
+R4
+S1
+R0
+w1743169281
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv
+!i122 5
+L0 1 8
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/multiplier.sv|
+!i113 1
+R8
+R9
+R10
+vorGate
+R1
+R12
+!i10b 1
+!s100 imQN829bQoSU`zQdecRU]3
+R3
+I:VTCKzAN4o`=_6LcCFD^f3
+R4
+S1
+R0
+R5
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv
+!i122 4
+R11
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/orGate.sv|
+!i113 1
+R8
+R9
+R10
+nor@gate
+vshiftLeft
+R1
+R12
+!i10b 1
+!s100 e4^TmOg:eM7kQ6EI:D35i3
+R3
+IF?4@^IT3Pi]hE3UPe?mGD3
+R4
+S1
+R0
+Z19 w1743168146
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv
+!i122 3
+L0 1 10
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftLeft.sv|
+!i113 1
+R8
+R9
+R10
+nshift@left
+vshiftRight
+R1
+R12
+!i10b 1
+!s100 k_Rb?YmOOhN6O[NP@R4Hk3
+R3
+IOZU@;iMnELB>>Q46`d<Oo1
+R4
+S1
+R0
+R19
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv
+!i122 2
+R11
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/shiftRight.sv|
+!i113 1
+R8
+R9
+R10
+nshift@right
+vsubtractor
+R1
+R12
+!i10b 1
+!s100 lb_KbKPgN?1`Ck4zEkDHG0
+R3
+IM[aJ`TN:36d<3SC5<o4d?1
+R4
+S1
+R0
+R13
+R14
+R15
+!i122 1
+L0 12 26
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R8
+R9
+R10
+vxorGate
+R1
+R12
+!i10b 1
+!s100 oH?zm<92lQ`Yz]Zlm_>]h2
+R3
+I33`jaKADf`MYcU_iiK>?N0
+R4
+S1
+R0
+R13
+8E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv
+FE:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv
+!i122 0
+R11
+R6
+r1
+!s85 0
+31
+R16
+!s107 E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Documents/TDD/Labs/laboratorio_2/problema1|E:/Documents/TDD/Labs/laboratorio_2/problema1/xorGate.sv|
+!i113 1
+R8
+R9
+R10
+nxor@gate

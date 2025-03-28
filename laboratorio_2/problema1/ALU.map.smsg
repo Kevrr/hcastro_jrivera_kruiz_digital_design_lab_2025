@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at sevenseg.sv(6): always construct contains both blocking and non-blocking assignments File: E:/Documents/TDD/Labs/laboratorio_2/problema1/sevenseg.sv Line: 6
+Warning (10268): Verilog HDL information at getResult.sv(13): always construct contains both blocking and non-blocking assignments File: E:/Documents/TDD/Labs/laboratorio_2/problema1/getResult.sv Line: 13
