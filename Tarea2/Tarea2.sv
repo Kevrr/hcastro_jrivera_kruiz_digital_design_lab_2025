@@ -1,0 +1,16 @@
+module Tarea2 (input clk, rst, M, rst_manual,
+							output [7:0] status);
+							
+	logic to, error, incr_mant, rst_timer;
+	logic [7:0] mant, cicles, selection;
+	
+	FSM control (clk, rst, M, to, rst_manual, error, incr_mant, rst_timer);
+	counter count_mant (clk, rst, incr_mant, mant);
+	counter count_cicles (clk, rst | rst_timer, 1'b1, cicles);
+	
+	mux21 mux2to1 (mant, 8'hFF, error, selection);
+	
+	comparator cmp (ciclos, 8'd200, to);
+	register state_reg (clk, rst, selection, status);
+	
+endmodule

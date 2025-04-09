@@ -1,0 +1,29 @@
+module FSM (input clk, rst, M, to, rst_manual,
+				output error, incr_mant, rst_timer);
+				
+	logic [1:0] state, next_state;
+	
+	//actual state
+	
+	always_ff @(posedge clk or posedge rst)
+	if (rst) state = 2'b00;
+	else
+		state = next_state;
+		
+	//next state
+	
+	always_comb
+		case(state)
+			2'b00: if (M) next_state = 2'b01; else next_state = 2'b10;
+			2'b01: next_state = 2'b00;
+			2'b10: if (to) next_state = 2'b11; else next_state = 2'b00;
+			2'b11: if (rst_manual) next_state = 2'b00; else next_state = 2'b11;
+			default next_state = 2'b00;
+		endcase
+		
+	//outputs
+	assign error = (state == 2'b01);
+	assign incr_mant = (state == 2'b01);
+	assign rst_timer = (state == 2'b11);
+	
+endmodule
