@@ -5,7 +5,7 @@
 module matrixTablero (
     input logic clk,           // Señal de reloj
     input logic rst_n,         // Señal de reset activo bajo
-    // input logic [83:0] data_in, // Esta entrada no parece usarse, se puede eliminar si no se necesita cargar externamente
+    // input logic [83:0] data_in,
     input logic load,          // Señal de control para colocar ficha (pulso)
     input logic [2:0] column,  // Columna seleccionada (0-6) donde colocar
     input logic player,        // Jugador actual (1'b1 para P1 según conexión actual)
@@ -45,13 +45,9 @@ module matrixTablero (
                 matrix[(empty_row * 7 + column) * 2 +: 2] <= (player == 1'b1) ? 2'b01 : 2'b10;
                 // ---- FIN CORRECCIÓN ----
             end
-            // Si empty_row es 6 (columna llena), no se modifica la matriz (la señal 'load'
-            // no debería haberse generado por matrixCtrl en primer lugar, pero esto es seguro).
+            // Si empty_row es 6 (columna llena), no se modifica la matriz.
         end
         // Si no hay load ni reset, la matriz mantiene su valor anterior (comportamiento de registro)
     end
-
-    // La entrada data_in original no se usa en esta lógica de colocar ficha.
-    // Si necesitas una forma de cargar un estado completo del tablero, necesitarías otra lógica.
 
 endmodule

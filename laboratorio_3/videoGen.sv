@@ -4,8 +4,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 module videoGen (
-    input logic clk,             // Señal de reloj (¿Usada internamente?)
-    input logic rst_n,           // Señal de reinicio activo bajo (¿Usada internamente?)
+    input logic clk,             // Señal de reloj
+    input logic rst_n,           // Señal de reinicio activo bajo
     input logic [9:0] x_pos, y_pos, // Coordenadas de píxeles actuales
     input logic [83:0] grid_state,  // Matriz de estado (datos fila 0 = fondo visual, fila 5 = tope visual)
     input logic [3:0] current_state,// Estado actual del juego (FSM)
